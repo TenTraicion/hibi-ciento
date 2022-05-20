@@ -8,3 +8,18 @@
   font-size: 36px;
   color: #deb887;
 }
+.center{
+  text-align: center;
+}
+img{
+  display: inline-block;
+  border-radius: 32px;
+}
+img:active{
+  border-radius: 64px;
+}
+span{
+  font-size: 150px;
+  font-family: cursive;
+  color: #deb887;
+}
