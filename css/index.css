@@ -21,20 +21,3 @@ But Class's are common and can be used multiple times*/
     font-size: 36px;
     color: #deb887;
 }
-/*hibi-ciento.css*/
-#ciento{
-    display: block;
-    background-color: #deb887;
-    height: 32px;
-    width: auto;
-    margin-left: 0%;
-    position: relative;
-}
-#ciento:hover{
-    background-color: #87c3de;
-}
-#ciento:active{
-    background-color: #e4e265;
-    border-radius: 8px;
-}
-/*hibi-ciento.css*/
