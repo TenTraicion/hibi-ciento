@@ -1,14 +1,14 @@
-#hover{
-    font-size: 48px;
+#hover {
+  font-size: 48px;
 }
-#hover:hover{
-    color: #f5deb3;
+#hover:hover {
+  color: #f5deb3;
 }
-.click:active{
-    font-size: 36px;
-    color: #f0ffff;
+.click:active {
+  font-size: 36px;
+  color: #f0ffff;
 }
-ol{
-    list-style: none;
+ol {
+  list-style: none;
 }
 /* To Hide the bullets of List */

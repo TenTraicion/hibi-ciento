@@ -1,0 +1,10 @@
+#generate {
+  font-size: 48px;
+}
+#generate:hover {
+  color: #e4e265;
+}
+.generate:active {
+  font-size: 36px;
+  color: #deb887;
+}

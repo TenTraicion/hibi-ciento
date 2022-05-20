@@ -1,23 +1,12 @@
-
-#fuck{
-    color: #faebd7;
-    font-weight: bold;
-    font-size: 52px;
+#fuck {
+  color: #faebd7;
+  font-weight: bold;
+  font-size: 52px;
 }
-.hoe:hover{
-    color: #e4e265;
-    font-size: 52px;
+.hoe:hover {
+  color: #e4e265;
+  font-size: 52px;
 }
 /*ID's are metioned by (#) while class's are mentioned by (.)
 Here ID's are unique and can only be used once.
 But Class's are common and can be used multiple times*/
-#generate{
-    font-size: 48px;
-}
-#generate:hover{
-    color: #e4e265;
-}
-.generate:active{
-    font-size: 36px;
-    color: #deb887;
-}
