@@ -53,3 +53,21 @@ img:active {
   border-radius: 8px;
 }
 /*hibi-ciento.css*/
+button{
+  text-align: center;
+  padding: 20px 50px;
+  border: 2px solid #5f4483;
+  color: #deb887;
+  background-color: #A25B5B;
+  font-size: 18px;
+  font-family: cursive;
+  border-radius: 40%;
+  margin: auto;
+}
+button:active{
+  border-radius: 50%;
+}
+div{
+  text-align: center;
+  color: #5f4483;
+}

@@ -1,5 +1,5 @@
 .hover {
-  font-size: 48px;
+  font-size: 36px;
 }
 .hover:hover {
   color: #f5deb3;
@@ -7,9 +7,16 @@
 ol {
   list-style: none;
   color: #ff6347;
+  width: 500px;
+  margin: 36px auto 0 auto;
+  padding: 0;
 }
 /* To Hide the bullets of List */
 li{
-    text-align: center;
     color: #f5deb3;
+    background-color: #a52a2a;
+    padding: 16px;
+    margin: 32px;
+    border-radius: 6px;
+    text-align: center;
 }
