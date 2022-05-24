@@ -20,3 +20,17 @@ li{
     border-radius: 6px;
     text-align: center;
 }
+/* #nothing{
+  margin-bottom: 36px;
+} */
+header p{
+  margin-bottom: 36px;
+}
+h2{
+  color: #f0ffff;
+}
+main p{
+  color: #00ffff;
+  margin: 12px;
+}
+

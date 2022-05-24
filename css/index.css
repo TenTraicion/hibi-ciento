@@ -10,3 +10,23 @@
 /*ID's are metioned by (#) while class's are mentioned by (.)
 Here ID's are unique and can only be used once.
 But Class's are common and can be used multiple times*/
+
+/* There are 4 kinds of selectors in CSS
+ID which are called by #id and these are unique and can only be used once.
+Tag like h1, p etc, which we can call every time.
+Class can be called by .class and they are common and can be used as much as we want.
+We can also use group selectors like, `h1, p, .class, #id, etc...`
+
+There are also 2 type of combinator like,
+descendent: `li p` means p tags under/inside li, or p tags that are descendent of li, seperated with space
+child: `h2 > p` means p tags as the direct child of h2, or p tags directly under/ inside of h2, seperated with a > sign. */
+
+/*
+  CSS Box Model are as follows>
+  Content
+  Padding
+  Border
+  Margin
+
+  and can be changed clockwise> T R B L or TB RL
+*/
