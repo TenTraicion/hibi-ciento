@@ -16,6 +16,10 @@ ID which are called by #id and these are unique and can only be used once.
 Tag like h1, p etc, which we can call every time.
 Class can be called by .class and they are common and can be used as much as we want.
 We can also use group selectors like, `h1, p, .class, #id, etc...`
+We can call html attribute by: `[src]`, `[href]` etc.
+There are universal selector to select all individually: `*`
+to select tags with specofoc class like: `p.class` or h1.clean`
+There are also psuedo selectors like: `a:hover`
 
 There are also 2 type of combinator like,
 descendent: `li p` means p tags under/inside li, or p tags that are descendent of li, seperated with space
@@ -39,15 +43,21 @@ header div{
   border: 2px solid #000000;
 }
 .indent{
+  margin-top: 50px;
   margin-bottom: -64px;
 }
 
 div h1{
+  font-size: 34px;
   margin-top: 100px;
+  color: #f0ffff;
 }
 div p{
   margin: 25px;
 }
 header img{
   box-shadow: 1px 1px 4px #00ffff;
+}
+span{
+  color: #deb887;
 }
