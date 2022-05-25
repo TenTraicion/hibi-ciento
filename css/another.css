@@ -19,6 +19,8 @@ li{
     margin: 32px;
     border-radius: 6px;
     text-align: center;
+    box-shadow: 1px 1px 5px #000000;
+    /* box-shadow: Vertical-Right Horizontal-Top Blurrness Color Color-Opacity; */
 }
 /* #nothing{
   margin-bottom: 36px;
