@@ -23,3 +23,7 @@ span{
   font-family: cursive;
   color: #deb887;
 }
+.button a{
+  border: 5px #f00;
+  border-radius: 25%;
+}
