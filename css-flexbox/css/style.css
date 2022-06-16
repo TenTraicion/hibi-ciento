@@ -1,0 +1,24 @@
+#container {
+    background-color: #521751;
+    padding: 10px;
+    width: 600px;
+  }
+  
+  p {
+    background-color: #d358d1;
+    margin: 10px;
+    width: 250px;
+  }
+  
+  ul {
+    background-color: #fa923f;
+    list-style: none;
+    width: 250px;
+    margin: 10px;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #eed4c0;
+    width: 100px;
+  }
