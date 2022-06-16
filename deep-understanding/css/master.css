@@ -17,3 +17,18 @@ ul{
     margin: 0;
     padding: 0;
 }
+
+header ul{
+    display: flex;
+}
+
+header li{
+    margin-left: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+}
