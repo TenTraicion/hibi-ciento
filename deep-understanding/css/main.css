@@ -1,3 +1,10 @@
 a{
     text-decoration: none;
 }
+
+#hero{
+    height: 800px;
+    background-image: url("../img/places/ocean.jpg");
+    background-position: center;
+    background-size: cover;
+}
