@@ -47,3 +47,14 @@
 #hero-content a:hover{
     background-color: #ffee00;
 }
+
+#goal{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.goal img{
+    height: 200px;
+}
