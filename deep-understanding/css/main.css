@@ -58,4 +58,11 @@
 .goal img{
     height: 200px;
     width: 100%;
+    box-shadow: 2px 4px 8px #444343;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.goal{
+    margin: 0 20px;
 }
