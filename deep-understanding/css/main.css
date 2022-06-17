@@ -65,4 +65,24 @@
 
 .goal{
     margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.goal p{
+    text-align: center;
+    font-size: 24px;
+    color: #7c7b7b;
+    margin: 20px 0;
+}
+
+.goal strong{
+    color: #00a075;
+}
+
+#highlight h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: #3b4140;
+    margin: 24px 0;
 }
