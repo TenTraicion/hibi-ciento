@@ -53,6 +53,7 @@
     width: 90%;
     margin: auto;
     margin-bottom: 40px;
+    justify-content: center;
 }
 
 .goal img{
@@ -85,4 +86,9 @@
     font-size: 40px;
     color: #3b4140;
     margin: 24px 0;
+}
+
+#highlight{
+    padding: 24px;
+    background: linear-gradient(135deg, #e3fffd, #b3f8f3);
 }
