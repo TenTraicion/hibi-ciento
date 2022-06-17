@@ -31,4 +31,23 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 15px 60px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+header a{
+    color: #fffb00;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px;
+    text-shadow: 1px 1px 2px #00000033;
+    border-radius: 6px;
+}
+
+header a:hover{
+    color: #4d4d4d;
+    background-color: #fffb00;
 }
