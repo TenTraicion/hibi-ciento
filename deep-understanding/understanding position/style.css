@@ -24,6 +24,9 @@ div {
   
   #two {
     background-color: #c95bc7;
+    position: relative;
+    top: 20px;
+    left: 20px;
   }
   
   #three {
