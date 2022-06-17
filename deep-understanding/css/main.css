@@ -1,7 +1,3 @@
-a{
-    text-decoration: none;
-}
-
 #hero{
     height: 800px;
     background-image: url("../img/places/ocean.jpg");
@@ -19,4 +15,35 @@ a{
     margin: 0 auto;
     position: relative;
     top: 200px;
+}
+
+#hero-content h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+#hero-content p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+#hero-content a{
+    text-decoration: none;
+    background-color: #fffb00;
+    padding: 12px 24px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px #444343;
+}
+
+#hero-content a:hover{
+    background-color: #ffee00;
 }
