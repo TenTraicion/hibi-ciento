@@ -1,6 +1,6 @@
-html{
+/* html{
   margin: 50px;
-}
+} */
 
 div {
     background-color: #c7c7c7;
@@ -21,7 +21,7 @@ div {
   
   #container p {
     color: #ffffff;
-    position: relative;
+    /* position: relative; */
   }
   
   #one {
@@ -41,6 +41,10 @@ div {
     background-color: #dd61db;
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 10px solid #000000; */
   }
 
   #four{
