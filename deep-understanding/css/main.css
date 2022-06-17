@@ -8,3 +8,13 @@ a{
     background-position: center;
     background-size: cover;
 }
+
+#hero-content{
+    width: 900px;
+    background-color: #332f2fcc;
+    box-shadow: 2px 4px 8px #444343;
+    border-radius: 8px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+}
