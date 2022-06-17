@@ -92,3 +92,10 @@
     padding: 24px;
     background: linear-gradient(135deg, #e3fffd, #b3f8f3);
 }
+
+header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}

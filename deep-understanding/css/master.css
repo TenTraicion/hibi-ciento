@@ -32,10 +32,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 15px 60px;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
     box-sizing: border-box;
 }
 
