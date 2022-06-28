@@ -14,7 +14,7 @@ header{
 }
 
 main ul{
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -24,6 +24,7 @@ main li{
     box-shadow: 1px 1px 4px #00000033;
     border-radius: 6px;
     overflow: hidden;
+    width: 500px;
 }
 
 .item-content{
