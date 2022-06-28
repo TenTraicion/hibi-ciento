@@ -1,5 +1,6 @@
 body{
     background: linear-gradient(30deg, #4d4d4d, #3a3a3a);
+    color: #444444;
 }
 
 main li img{
@@ -20,11 +21,29 @@ main ul{
 main li{
     display: flex;
     background-color: white;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 4px #00000033;
     border-radius: 6px;
     overflow: hidden;
 }
 
 .item-content{
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.actions{
+    text-align: right;
+}
+
+.actions a{
+    text-decoration: none;
+    padding: 6px;
+    color: #16d3e4;
+    border-radius: 5px;
+}
+
+.actions a:hover{
+    background-color: #ebfdff;
 }
