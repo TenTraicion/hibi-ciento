@@ -64,14 +64,14 @@ main li{
 }
 
 #page-logo a{
-    color: rgb(183, 230, 235);
+    color: #b7e6eb;
 }
 
 header a{
-    color: rgb(183, 230, 235);
+    color: #b7e6eb;
 }
 
 .header a:hover{
-    background-color: rgb(183, 230, 235);
-    color: rgb(59, 59, 59);
+    background-color: #b7e6eb;
+    color: #3b3b3b;
 }
