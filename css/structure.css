@@ -100,7 +100,7 @@ nav form {
   padding: 0 2em;
 }
 
-input {
+input, button {
   font-size: 1.6rem;
   height: 32px;
 }
@@ -109,12 +109,14 @@ input[type="search"] {
   flex: 3;
 }
 
-input[type="submit"] {
+button{
   flex: 1;
   margin-left: 1rem;
   background: #333;
   border: 0;
   color: #ffffff;
+  border-radius: 1px;
+  padding: 0;
 }
 
 /* || main layout */
