@@ -43,3 +43,58 @@ a{
 #main-header nav a:hover{
     color: #e4a32c;
 }
+
+main h1{
+    text-align: center;
+    color: #eea450;
+    font-size: 48px;
+}
+
+#latest-products {
+    width: 80%;
+    margin: 50px auto;
+}
+
+#latest-products ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.food-item{
+    background-color: #e4ceb6;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.food-item img{
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.food-item-content{
+    padding: 16px;
+    text-align: center;
+}
+
+.btn{
+    background-color: #e49d2c;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 24px;
+}
+
+.btn:hover{
+    background-color: #dd8622;
+}
+
+footer{
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}
