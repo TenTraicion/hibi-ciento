@@ -3,50 +3,50 @@
 } */
 
 div {
-    background-color: #c7c7c7;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  p {
-    color: #000000;
-    padding: 50px;
-    margin: 0;
-  }
-  
-  #container {
-    background-color: #521751;
-    /* position: relative; */
-  }
-  
-  #container p {
-    color: #ffffff;
-    /* position: relative; */
-  }
-  
-  #one {
-    background-color: #943092;
-    position: fixed;
-    top: 0;
-  }
-  
-  #two {
-    background-color: #c95bc7;
-    position: relative;
-    /* top: 20px;
-    left: 20px; */
-  }
-  
-  #three {
-    background-color: #dd61db;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
-    /* border: 10px solid #000000; */
-  }
+  background-color: #c7c7c7;
+  padding: 20px;
+  text-align: center;
+}
 
-  #four{
-    background-color: #8b348a;
-  }
+p {
+  color: #000000;
+  padding: 50px;
+  margin: 0;
+}
+
+#container {
+  background-color: #521751;
+  /* position: relative; */
+}
+
+#container p {
+  color: #ffffff;
+  /* position: relative; */
+}
+
+#one {
+  background-color: #943092;
+  position: fixed;
+  top: 0;
+}
+
+#two {
+  background-color: #c95bc7;
+  position: relative;
+  /* top: 20px;
+    left: 20px; */
+}
+
+#three {
+  background-color: #dd61db;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  /* border: 10px solid #000000; */
+}
+
+#four {
+  background-color: #8b348a;
+}

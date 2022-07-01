@@ -3,7 +3,7 @@
   font-weight: bold;
   font-size: 52px;
 }
-.hoe{
+.hoe {
   color: #e4e265;
   font-size: 52px;
 }
@@ -34,7 +34,7 @@ child: `h2 > p` means p tags as the direct child of h2, or p tags directly under
 
   and can be changed clockwise> T R B L or TB RL
 */
-header div{
+header div {
   text-align: center;
   background-color: #4f86b6;
   width: 750px;
@@ -42,22 +42,22 @@ header div{
   border-radius: 20px;
   border: 2px solid #000000;
 }
-.indent{
+.indent {
   margin-top: 50px;
   margin-bottom: -64px;
 }
 
-div h1{
+div h1 {
   font-size: 34px;
   margin-top: 100px;
   color: #f0ffff;
 }
-div p{
+div p {
   margin: 25px;
 }
-header img{
+header img {
   box-shadow: 1px 1px 4px #00ffff;
 }
-span{
+span {
   color: #deb887;
 }

@@ -100,7 +100,8 @@ nav form {
   padding: 0 2em;
 }
 
-input, button {
+input,
+button {
   font-size: 1.6rem;
   height: 32px;
 }
@@ -109,7 +110,7 @@ input[type="search"] {
   flex: 3;
 }
 
-button{
+button {
   flex: 1;
   margin-left: 1rem;
   background: #333;

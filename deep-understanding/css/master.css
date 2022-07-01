@@ -1,90 +1,90 @@
-body{
-    font-family: "Quicksand", sans-serif;
-    margin: 0;
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
 }
 
-#page-logo a{
-    padding: 10px;
-    font-family: "Olio Script", sans-serif;
-    color: #ffff00;
-    font-size: 50px;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px #000000;
+#page-logo a {
+  padding: 10px;
+  font-family: "Olio Script", sans-serif;
+  color: #ffff00;
+  font-size: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #000000;
 }
 
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-header ul{
-    display: flex;
+header ul {
+  display: flex;
 }
 
-header li{
-    margin-left: 20px;
+header li {
+  margin-left: 20px;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 60px;
-    box-sizing: border-box;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  box-sizing: border-box;
 }
 
-header a{
-    color: #fffb00;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 12px;
-    text-shadow: 1px 1px 2px #00000033;
-    border-radius: 6px;
+header a {
+  color: #fffb00;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 12px;
+  text-shadow: 1px 1px 2px #00000033;
+  border-radius: 6px;
 }
 
-.header a:hover{
-    color: #4d4d4d;
-    background-color: #fffb00;
+.header a:hover {
+  color: #4d4d4d;
+  background-color: #fffb00;
 }
 
-footer{
-    background: linear-gradient(70deg, #181818, #191d1d);
-    padding: 36px 0;
+footer {
+  background: linear-gradient(70deg, #181818, #191d1d);
+  padding: 36px 0;
 }
 
-footer ul{
-    display: flex;
-    justify-content: center;
-    /* padding: 40px; */
+footer ul {
+  display: flex;
+  justify-content: center;
+  /* padding: 40px; */
 }
 
-footer li{
-    width: 80px;
-    height: 80px;
-    margin: 0 20px;
+footer li {
+  width: 80px;
+  height: 80px;
+  margin: 0 20px;
 }
 
-footer img{
-    width: 100%;
-    height: 100%;
+footer img {
+  width: 100%;
+  height: 100%;
 }
 
-footer p{
-    color: yellowgreen;
-    text-align: center;
-    padding: 20px 0 0 0;
+footer p {
+  color: yellowgreen;
+  text-align: center;
+  padding: 20px 0 0 0;
 }
 
-#footer a{
-    color: red;
-    text-decoration: none;
+#footer a {
+  color: red;
+  text-decoration: none;
 }
 
-#footer a:hover{
-    color: blueviolet;
-    background-color: yellow;
-    padding: 5px;
-    border-radius: 5px;
+#footer a:hover {
+  color: blueviolet;
+  background-color: yellow;
+  padding: 5px;
+  border-radius: 5px;
 }

@@ -1,100 +1,100 @@
-body{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    background-color: #2c2926;
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: #2c2926;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-#main-header{
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1d1a18;
-    padding: 0 20px;
+#main-header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1a18;
+  padding: 0 20px;
 }
 
-#logo{
-    font-size: 24px;
-    font-weight: bold;
-    color: #eea450;
-    text-transform: uppercase;
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #eea450;
+  text-transform: uppercase;
 }
 
-#main-header ul{
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+#main-header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-#main-header li{
-    margin: 0 16px;
+#main-header li {
+  margin: 0 16px;
 }
 
-#main-header nav a{
-    color: #b9831f;
-    font-size: 20px;
+#main-header nav a {
+  color: #b9831f;
+  font-size: 20px;
 }
 
-#main-header nav a:hover{
-    color: #e4a32c;
+#main-header nav a:hover {
+  color: #e4a32c;
 }
 
-main h1{
-    text-align: center;
-    color: #eea450;
-    font-size: 48px;
+main h1 {
+  text-align: center;
+  color: #eea450;
+  font-size: 48px;
 }
 
 #latest-products {
-    width: 80%;
-    margin: 50px auto;
+  width: 80%;
+  margin: 50px auto;
 }
 
-#latest-products ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin: 0;
-    padding: 0;
+#latest-products ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
 }
 
-.food-item{
-    background-color: #e4ceb6;
-    border-radius: 6px;
-    overflow: hidden;
+.food-item {
+  background-color: #e4ceb6;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.food-item img{
-    height: 240px;
-    width: 100%;
-    object-fit: cover;
+.food-item img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
 }
 
-.food-item-content{
-    padding: 16px;
-    text-align: center;
+.food-item-content {
+  padding: 16px;
+  text-align: center;
 }
 
-.btn{
-    background-color: #e49d2c;
-    color: white;
-    border-radius: 4px;
-    padding: 8px 24px;
+.btn {
+  background-color: #e49d2c;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 24px;
 }
 
-.btn:hover{
-    background-color: #dd8622;
+.btn:hover {
+  background-color: #dd8622;
 }
 
-footer{
-    text-align: center;
+footer {
+  text-align: center;
 }
 
-footer a{
-    text-decoration: none;
+footer a {
+  text-decoration: none;
 }

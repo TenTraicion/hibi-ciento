@@ -12,27 +12,26 @@ ol {
   padding: 0;
 }
 /* To Hide the bullets of List */
-li{
-    color: #f5deb3;
-    background-color: #a52a2a;
-    padding: 16px;
-    margin: 32px;
-    border-radius: 6px;
-    text-align: center;
-    box-shadow: 1px 1px 5px #000000;
-    /* box-shadow: Vertical-Right Horizontal-Top Blurrness Color Color-Opacity; */
+li {
+  color: #f5deb3;
+  background-color: #a52a2a;
+  padding: 16px;
+  margin: 32px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 1px 1px 5px #000000;
+  /* box-shadow: Vertical-Right Horizontal-Top Blurrness Color Color-Opacity; */
 }
 /* #nothing{
   margin-bottom: 36px;
 } */
-header p{
+header p {
   margin-bottom: 36px;
 }
-h2{
+h2 {
   color: #f0ffff;
 }
-main p{
+main p {
   color: #00ffff;
   margin: 12px;
 }
-

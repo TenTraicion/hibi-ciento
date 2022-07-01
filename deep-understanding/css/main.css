@@ -1,101 +1,101 @@
-#hero{
-    height: 800px;
-    background-image: url("../img/places/ocean.jpg");
-    background-position: center;
-    background-size: cover;
+#hero {
+  height: 800px;
+  background-image: url("../img/places/ocean.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-#hero-content{
-    width: 900px;
-    background-color: #332f2fcc;
-    box-shadow: 2px 4px 8px #444343;
-    border-radius: 8px;
-    text-align: center;
-    padding: 50px 0;
-    margin: 0 auto;
-    position: relative;
-    top: 200px;
+#hero-content {
+  width: 900px;
+  background-color: #332f2fcc;
+  box-shadow: 2px 4px 8px #444343;
+  border-radius: 8px;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
 }
 
-#hero-content h1{
-    color: white;
-    text-transform: uppercase;
-    font-size: 50px;
-    font-family: "Raleway", sans-serif;
-    margin: 0;
+#hero-content h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 
-#hero-content p{
-    color: white;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 32px;
+#hero-content p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 32px;
 }
 
-#hero-content a{
-    text-decoration: none;
-    background-color: #fffb00;
-    padding: 12px 24px;
-    color: #000;
-    font-size: 24px;
-    font-weight: 700;
-    border-radius: 8px;
-    box-shadow: 2px 4px 8px #444343;
+#hero-content a {
+  text-decoration: none;
+  background-color: #fffb00;
+  padding: 12px 24px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px #444343;
 }
 
-#hero-content a:hover{
-    background-color: #ffee00;
+#hero-content a:hover {
+  background-color: #ffee00;
 }
 
-#goal{
-    display: flex;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 40px;
-    justify-content: center;
+#goal {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+  justify-content: center;
 }
 
-.goal img{
-    height: 200px;
-    width: 100%;
-    box-shadow: 2px 4px 8px #444343;
-    border-radius: 10px;
-    object-fit: cover;
+.goal img {
+  height: 200px;
+  width: 100%;
+  box-shadow: 2px 4px 8px #444343;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-.goal{
-    margin: 0 20px;
-    text-transform: uppercase;
+.goal {
+  margin: 0 20px;
+  text-transform: uppercase;
 }
 
-.goal p{
-    text-align: center;
-    font-size: 24px;
-    color: #7c7b7b;
-    margin: 20px 0;
+.goal p {
+  text-align: center;
+  font-size: 24px;
+  color: #7c7b7b;
+  margin: 20px 0;
 }
 
-.goal strong{
-    color: #00a075;
+.goal strong {
+  color: #00a075;
 }
 
-#highlight h2{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 40px;
-    color: #3b4140;
-    margin: 24px 0;
+#highlight h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color: #3b4140;
+  margin: 24px 0;
 }
 
-#highlight{
-    padding: 24px;
-    background: linear-gradient(135deg, #e3fffd, #b3f8f3);
+#highlight {
+  padding: 24px;
+  background: linear-gradient(135deg, #e3fffd, #b3f8f3);
 }
 
-header{
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }

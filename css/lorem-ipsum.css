@@ -8,22 +8,22 @@
   font-size: 36px;
   color: #deb887;
 }
-.center{
+.center {
   text-align: center;
 }
-img{
+img {
   display: inline-block;
   border-radius: 32px;
 }
-img:active{
+img:active {
   border-radius: 64px;
 }
-span{
+span {
   font-size: 150px;
   font-family: cursive;
   color: #deb887;
 }
-.button a{
+.button a {
   border: 5px #f00;
   border-radius: 25%;
 }

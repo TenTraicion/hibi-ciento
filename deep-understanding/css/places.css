@@ -1,77 +1,77 @@
-body{
-    background: linear-gradient(30deg, #4d4d4d, #3a3a3a);
-    color: #444444;
+body {
+  background: linear-gradient(30deg, #4d4d4d, #3a3a3a);
+  color: #444444;
 }
 
-main li img{
-    width: 300px;
-    height: 280px;
-    object-fit: cover;
+main li img {
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
 }
 
-header{
-    position: static;
+header {
+  position: static;
 }
 
-main ul{
-    width: 1200px;
-    margin: 0 auto 48px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 20px;
+main ul {
+  width: 1200px;
+  margin: 0 auto 48px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
 }
 
-main li:nth-of-type(3){
-    grid-column: 1 / 3;
+main li:nth-of-type(3) {
+  grid-column: 1 / 3;
 }
 
-main li:nth-of-type(10){
-    grid-column: 1 / 3;
+main li:nth-of-type(10) {
+  grid-column: 1 / 3;
 }
 
-main li{
-    display: flex;
-    background-color: white;
-    box-shadow: 1px 1px 4px #00000033;
-    border-radius: 6px;
-    overflow: hidden;
+main li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px #00000033;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.item-content{
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.item-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.item-content h2{
-    margin: 0;
+.item-content h2 {
+  margin: 0;
 }
 
-.actions{
-    text-align: right;
+.actions {
+  text-align: right;
 }
 
-.actions a{
-    text-decoration: none;
-    padding: 6px;
-    color: #16d3e4;
-    border-radius: 5px;
+.actions a {
+  text-decoration: none;
+  padding: 6px;
+  color: #16d3e4;
+  border-radius: 5px;
 }
 
-.actions a:hover{
-    background-color: #ebfdff;
+.actions a:hover {
+  background-color: #ebfdff;
 }
 
-#page-logo a{
-    color: #b7e6eb;
+#page-logo a {
+  color: #b7e6eb;
 }
 
-header a{
-    color: #b7e6eb;
+header a {
+  color: #b7e6eb;
 }
 
-.header a:hover{
-    background-color: #b7e6eb;
-    color: #3b3b3b;
+.header a:hover {
+  background-color: #b7e6eb;
+  color: #3b3b3b;
 }
