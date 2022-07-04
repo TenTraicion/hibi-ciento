@@ -27,7 +27,7 @@ a {
 .menu-btn{
   width: 3rem;
   height: 3rem;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: space-around;
   display: none;
