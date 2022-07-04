@@ -106,3 +106,9 @@ footer {
 footer a {
   text-decoration: none;
 }
+
+@media (max-width: 768px){
+  #latest-products ul{
+    grid-template-columns: 100%;
+  }
+}
