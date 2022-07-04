@@ -76,7 +76,7 @@ main h1 {
 }
 
 .food-item-content {
-  padding: 16px;
+  padding: 0.5rem;
   text-align: center;
 }
 
@@ -84,7 +84,7 @@ h2{
   /* font-size: 100%; - of parent css style*/
   /* font-size: 1.5em; - of parent css style*/
   /* font-size: 1.5rem; - of root element*/
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .btn {
