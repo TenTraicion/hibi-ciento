@@ -80,6 +80,13 @@ main h1 {
   text-align: center;
 }
 
+h2{
+  /* font-size: 100%; - of parent css style*/
+  /* font-size: 1.5em; - of parent css style*/
+  /* font-size: 1.5rem; - of root element*/
+  font-size: 32px;
+}
+
 .btn {
   background-color: #e49d2c;
   color: #ffffff;
