@@ -62,9 +62,14 @@ a {
   width: 100%;
   height: 100%;
   background-color: #1d1a1b;
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  left: 0; */
+  left: 0;
+  display: none;
+}
+
+#side-drawer:target{
+  display: block;
 }
 
 #side-drawer ul{
