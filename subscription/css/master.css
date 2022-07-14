@@ -1,5 +1,19 @@
 html {
   --color-grey-100: #ececec;
+  --color-grey-400: #868686;
+  --color-grey-600: #3a3a3a;
+  --color-grey-900: #292929;
+
+  --color-primary-300: #a7e2ff;
+  --color-primary-700: #00aaff;
+
+  --color-default-100: #ffffff;
+  --color-default-300: #e0e0e0;
+  --color-default-500: #c9c8c8;
+  --color-default-900: #000;
+
+  --size-1: 18px;
+  --size-5: 50px;
     
   background-color: var(--color-grey-100);
     font-family: 'Krub', sans-serif;
@@ -7,14 +21,14 @@ html {
   }
   
   .card-container {
-    background-color: #ffffff;
+    background-color: var(--color-default-100);
     width: 350px;
     margin: 50px auto;
-    box-shadow: 3px 3px 10px #c9c8c8;
+    box-shadow: 3px 3px 10px var(--color-default-500);
   }
   
   h1 {
-    color: #3a3a3a;
+    color: var(--color-grey-600);
     text-align: left;
     padding: 30px 50px 0px 50px;
     margin: 10px 0;
@@ -23,23 +37,23 @@ html {
   }
   
   .card-info {
-    color: #868686;
+    color: var(--color-grey-400);
     text-align: left;
     padding: 0 50px;
     margin: 10px 0 30px 0;
   }
   
   .price {
-    color: rgb(41, 41, 41);
-    background-color: #a7e2ff;
+    color: var(--color-grey-900);
+    background-color: var(--color-primary-300);
     text-align: center;
     margin: 30px auto 10px auto;
-    font-size: 50px;
+    font-size: var(--size-5);
     font-weight: 600;
   }
   
   .price-info {
-    color: #868686;
+    color: var(--color-grey-400);
     text-align: center;
     margin: 10px 0 30px 0;
     padding: 0 50px;
@@ -61,7 +75,7 @@ html {
   }
   
   .sub-feature-text {
-    color: #3a3a3a;
+    color: var(--color-grey-600);
     padding: 2px;
     margin: 5px;   
   }
@@ -73,21 +87,21 @@ html {
   }
   
   .button {
-    color: #00aaff;
+    color: var(--color-primary-700);
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
     width: 70%;
     padding: 10px;
     margin: 0 0 30px 0;
-    border: 2px solid #e0e0e0;
-    font-size: 18px;
+    border: 2px solid var(--color-default-300);
+    font-size: var(--size-1);
     font-weight: 600;
   }
   
   .button:hover {
-    color: #ffffff;
-    background-color: #00aaff;
-    border: 2px solid #ffffff;
+    color: var(--color-default-100);
+    background-color: var(--color-primary-700);
+    border: 2px solid var(--color-default-100);
   }
   
