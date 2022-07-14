@@ -25,11 +25,14 @@ html {
     width: 350px;
     margin: 50px auto;
     box-shadow: 3px 3px 10px var(--color-default-500);
+    transition: transform 0.5s ease-out 1s;
+    /* transition: background-color 0.5s ease-out 1s; */
   }
 
   .card-container:hover{
     transform: scale(1.05);
     /* transform: rotate(180deg); */
+    background-color: #ffff00;
   }
   
   h1 {
@@ -102,6 +105,7 @@ html {
     border: 2px solid var(--color-default-300);
     font-size: var(--size-1);
     font-weight: 600;
+    transition: background-color 0.5s ease-out 1s;
   }
   
   .button:hover {
