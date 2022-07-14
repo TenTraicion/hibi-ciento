@@ -9,9 +9,11 @@
   </head>
   <body>
     <form action="#" method="get">
-        <h1>Demo From</h1>
+      <h1>Demo From</h1>
       <label for="uname">Your Name:</label>
       <input type="text" name="user-name" id="uname" />
+      <label for="msg">Your Message</label>
+      <textarea name="user-message" id="msg"></textarea>
       <label for="email">Your EMail Address</label>
       <input type="email" name="user-email" id="email" />
       <label for="age">Your Age</label>
@@ -23,24 +25,37 @@
       <hr />
       <h2>How should we verify your account?</h2>
       <div class="form-control-inline">
-      <input type="radio" name="verify" id="vtext" value="text" />
-      <label for="vtext">Text Massage</label></div>
+        <input type="radio" name="verify" id="vtext" value="text" />
+        <label for="vtext">Text Massage</label>
+      </div>
       <div class="form-control-inline">
-      <input type="radio" name="verify" id="vphone" value="call" />
-      <label for="vphone">Phone Call</label></div>
+        <input type="radio" name="verify" id="vphone" value="call" />
+        <label for="vphone">Phone Call</label>
+      </div>
       <div class="form-control-inline">
-      <input type="radio" name="verify" id="vemail" value="email" />
-      <label for="vemail">Email</label></div>
+        <input type="radio" name="verify" id="vemail" value="email" />
+        <label for="vemail">Email</label>
+      </div>
       <div class="form-control-inline">
-        <input type="checkbox" id="term" name="terms" value="true">
+        <input type="checkbox" id="term" name="terms" value="true" />
         <label for="term">Agree to our Tems and Conditions</label>
       </div>
       <div class="form-control-inline">
-        <input type="checkbox" id="contact-phone" name="contact" value="phone">
+        <input
+          type="checkbox"
+          id="contact-phone"
+          name="contact"
+          value="phone"
+        />
         <label for="contact-phone">Contact me Via Phone</label>
       </div>
       <div class="form-control-inline">
-        <input type="checkbox" id="contact-email" name="contact" value="email">
+        <input
+          type="checkbox"
+          id="contact-email"
+          name="contact"
+          value="email"
+        />
         <label for="contact-email">Contact me Via Email</label>
       </div>
       <button>Submit</button>
