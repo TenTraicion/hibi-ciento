@@ -11,10 +11,6 @@ form{
     border-radius: 6px;
 }
 
-label{
-    display: block;
-}
-
 input{
     width: 100%;
     margin-top: .5rem;
@@ -48,4 +44,13 @@ button{
 button:hover{
     background-color: #340e5f;
     border-color: #340e5f;
+}
+
+.form-control-inline{
+    display: flex;
+}
+
+.form-control-inline input{
+    width: auto;
+    margin-right: 0.5rem;
 }

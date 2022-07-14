@@ -8,17 +8,29 @@
     <title>Form</title>
   </head>
   <body>
+    <h1>Demo From</h1>
     <form action="/" method="get">
-        <label for="uname">Your Name:</label>
-      <input type="text" name="user-name" id="uname">
+      <label for="uname">Your Name:</label>
+      <input type="text" name="user-name" id="uname" />
       <label for="email">Your EMail Address</label>
-      <input type="email" name="user-email" id="email">
+      <input type="email" name="user-email" id="email" />
       <label for="age">Your Age</label>
-      <input type="number" step="1" name="user-age" id="age">
+      <input type="number" step="1" name="user-age" id="age" />
       <label for="pwd">Your Password</label>
-      <input type="password" name="user-password" id="pwd">
+      <input type="password" name="user-password" id="pwd" />
       <label for="birth">Your BirthDay</label>
-      <input type="date" name="user-biirthday" id="birth">
+      <input type="date" name="user-biirthday" id="birth" />
+      <hr />
+      <h2>How should we verify your account?</h2>
+      <div class="form-control-inline">
+      <input type="radio" name="verify" id="vtext" value="text" />
+      <label for="vtext">Text Massage</label></div>
+      <div class="form-control-inline">
+      <input type="radio" name="verify" id="vphone" value="call" />
+      <label for="vphone">Phone Call</label></div>
+      <div class="form-control-inline">
+      <input type="radio" name="verify" id="vemail" value="email" />
+      <label for="vemail">Email</label></div>
       <button>Submit</button>
     </form>
   </body>
