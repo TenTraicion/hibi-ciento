@@ -1,12 +1,20 @@
 body{
     background-color: #1f1e1e;
-    margin: 8rem;
+}
+
+form{
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
 }
 
 input{
-    width: 20rem;
+    width: 100%;
     display: block;
     margin-bottom: 1rem;
+    box-sizing: border-box;
 }
 
 button{
