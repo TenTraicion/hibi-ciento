@@ -69,3 +69,8 @@ button:hover{
     width: auto;
     margin-right: 0.5rem;
 }
+
+.button{
+    display: flex;
+    justify-content: space-between;
+}
