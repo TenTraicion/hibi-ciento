@@ -12,21 +12,39 @@
       <h1>Demo Form</h1>
     </header>
     <main>
-      <form action="#" method="get">
+      <form action="" method="get">
         <section>
           <h2>Your Personal Details</h2>
           <ul>
             <li>
-              <label for="uname">Your Name:</label>
-              <input type="text" name="user-name" id="uname" />
+              <label for="name">Your Name:</label>
+              <input type="text" name="name" id="name" required />
+            </li>
+            <li>
+              <label for="uname">Username:</label>
+              <input
+                type="text"
+                name="user-name"
+                id="uname"
+                required
+                minlength="5"
+                maxlength="16"
+              />
             </li>
             <li>
               <label for="email">Your EMail Address</label>
-              <input type="email" name="user-email" id="email" />
+              <input type="email" name="user-email" id="email" required />
             </li>
             <li>
               <label for="pwd">Your Password</label>
-              <input type="password" name="user-password" id="pwd" />
+              <input
+                type="password"
+                name="user-password"
+                id="pwd"
+                required
+                minlength="8"
+                maxlength="16"
+              />
             </li>
           </ul>
         </section>
@@ -35,11 +53,26 @@
           <ul>
             <li>
               <label for="age">Your Age</label>
-              <input type="number" step="1" name="user-age" id="age" />
+              <input
+                type="number"
+                step="1"
+                name="user-age"
+                id="age"
+                required
+                min="16"
+                max="65"
+              />
             </li>
             <li>
               <label for="birth">Your BirthDay</label>
-              <input type="date" name="user-biirthday" id="birth" />
+              <input
+                type="date"
+                name="user-biirthday"
+                id="birth"
+                required
+                min="1955-01-01"
+                max="2014-01-01"
+              />
             </li>
             <li>
               <label for="color-group">Your Favourite Color Group</label>
@@ -70,15 +103,33 @@
           <h2>How should we verify your account?</h2>
           <ul>
             <li class="form-control-inline">
-              <input type="radio" name="verify" id="vtext" value="text" />
+              <input
+                type="radio"
+                name="verify"
+                id="vtext"
+                value="text"
+                required
+              />
               <label for="vtext">Text Massage</label>
             </li>
             <li class="form-control-inline">
-              <input type="radio" name="verify" id="vphone" value="call" />
+              <input
+                type="radio"
+                name="verify"
+                id="vphone"
+                value="call"
+                required
+              />
               <label for="vphone">Phone Call</label>
             </li>
             <li class="form-control-inline">
-              <input type="radio" name="verify" id="vemail" value="email" />
+              <input
+                type="radio"
+                name="verify"
+                id="vemail"
+                value="email"
+                required
+              />
               <label for="vemail">Email</label>
             </li>
           </ul>
@@ -114,8 +165,8 @@
           </div>
         </section>
         <section class="button">
-            <button type="reset">Clear</button>
-            <button type="submit">Submit</button>
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
         </section>
       </form>
     </main>
