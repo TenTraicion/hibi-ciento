@@ -8,8 +8,8 @@
     <title>Form</title>
   </head>
   <body>
-    <h1>Demo From</h1>
-    <form action="/" method="get">
+    <form action="#" method="get">
+        <h1>Demo From</h1>
       <label for="uname">Your Name:</label>
       <input type="text" name="user-name" id="uname" />
       <label for="email">Your EMail Address</label>
@@ -31,6 +31,18 @@
       <div class="form-control-inline">
       <input type="radio" name="verify" id="vemail" value="email" />
       <label for="vemail">Email</label></div>
+      <div class="form-control-inline">
+        <input type="checkbox" id="term" name="terms" value="true">
+        <label for="term">Agree to our Tems and Conditions</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="checkbox" id="contact-phone" name="contact" value="phone">
+        <label for="contact-phone">Contact me Via Phone</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="checkbox" id="contact-email" name="contact" value="email">
+        <label for="contact-email">Contact me Via Email</label>
+      </div>
       <button>Submit</button>
     </form>
   </body>
