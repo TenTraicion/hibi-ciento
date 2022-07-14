@@ -44,6 +44,10 @@ input:focus, textarea:focus{
     border-color: #20053f;
 }
 
+textarea{
+    resize: vertical;
+}
+
 button{
     display: block;
     /* font: normal 1rem cursive; */
