@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    font-family: cursive;
+    color: #f0f8ff;
+    background-color: #22272e;
+}
+
+a{
+    text-decoration: none;
+    color: #00ffff;
+}
+
+a:hover{
+    color: #ffe4c4;
+}
