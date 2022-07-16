@@ -15,3 +15,6 @@ result++; //same as l13 and works with - too
 result +=5; // result=result+5 same for other cases.
 
 console.log("Ten" + "Traicion");
+
+let uname = "tentraicion";
+console.log(uname.length);
