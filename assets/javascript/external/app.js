@@ -18,7 +18,8 @@ function calculate() {
 
 calculate();
 
-alert("you are " + adultYears + "y/o and born in: " + born);
+// alert("you are " + adultYears + "y/o and born in: " + born);
+console.log("you are " + adultYears + "y/o and born in: " + born);
 
 // Use the function dynamically
 let fuck;
@@ -35,12 +36,12 @@ function fucks(userAge) {
 
 fuck = fucks(age);
 
-alert(age + "y/o man can fuck approx " + fuck + "y/o lady");
+console.log(age + "y/o man can fuck approx " + fuck + "y/o lady");
 
 let person = {
     name: "tentraicion",
     greet() {
-        alert("Hello!");
+        console.log("Hello!");
     }
 };
 
