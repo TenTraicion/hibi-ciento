@@ -8,7 +8,14 @@ let job = {
     salary: "$500k"
 };
 
-let adultYears = age - 18;
-let born = year - age;
+let adultYears;
+let born;
+
+function calculate() {
+    adultYears = age - 18
+    born = year - age
+};
+
+calculate();
 
 alert(adultYears + "y/o and born in: " + born);
