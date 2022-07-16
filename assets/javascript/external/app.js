@@ -19,3 +19,13 @@ function calculate() {
 calculate();
 
 alert(adultYears + "y/o and born in: " + born);
+
+let fuck;
+
+function fucks() {
+    fuck = age - 3
+};
+
+fucks();
+
+alert(age + "y/o man can fuck approx " + fuck + "y/o lady");
