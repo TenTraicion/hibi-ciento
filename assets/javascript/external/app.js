@@ -23,10 +23,10 @@ alert("you are " + adultYears + "y/o and born in: " + born);
 // Use the function dynamically
 let fuck;
 
-function fucks() {
-    return age - 3;
+function fucks(userAge) {
+    return userAge - 3;
 };
 
-fuck = fucks();
+fuck = fucks(age);
 
 alert(age + "y/o man can fuck approx " + fuck + "y/o lady");
