@@ -18,3 +18,6 @@ console.log("Ten" + "Traicion");
 
 let uname = "tentraicion";
 console.log(uname.length);
+
+let hobbies = ["Sports", "Cooking"];
+console.log(hobbies.length);
