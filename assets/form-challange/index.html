@@ -12,7 +12,7 @@
         <h1>Contact Us</h1>
     </header>
     <main>
-        <form action="#" method="get">
+        <form action="" method="get">
             <section>
                 <h2>How can we help you?</h2>
                 <ul>
@@ -26,17 +26,17 @@
                     </li>
                     <li>
                         <label for="phone">Your Phone Number</label>
-                        <input type="tel" name="uphone" id="phone" placeholder="(+880) 1777 777 777" required>
+                        <input type="tel" name="uphone" id="phone" placeholder="(+880) 1777 777 777" required minlength="5">
                     </li>
                     <li>
                         <label for="msg">Your Message</label>
-                        <textarea name="umsg" id="msg" rows="10" placeholder="Type Your Message Here!"></textarea>
+                        <textarea name="umsg" id="msg" rows="10" placeholder="Type Your Message Here!" required minlength="10" maxlength="200"></textarea>
                     </li>
                 </ul>
             </section>
             <section>
                 <label for="find">How did you find us?</label>
-                <select name="ufind" id="find">
+                <select name="ufind" id="find" required>
                     <option value="web">Web Search</option>
                     <option value="mouth">Word of Mouth</option>
                     <option value="other">Other</option>
