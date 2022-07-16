@@ -12,20 +12,21 @@ let adultYears;
 let born;
 
 function calculate() {
-    adultYears = age - 18
-    born = year - age
+    adultYears = age - 18;
+    born = year - age;
 };
 
 calculate();
 
-alert(adultYears + "y/o and born in: " + born);
+alert("you are " + adultYears + "y/o and born in: " + born);
 
+// Use the function dynamically
 let fuck;
 
 function fucks() {
-    fuck = age - 3
+    return age - 3;
 };
 
-fucks();
+fuck = fucks();
 
 alert(age + "y/o man can fuck approx " + fuck + "y/o lady");
