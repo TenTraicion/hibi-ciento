@@ -13,3 +13,5 @@ let result = (10+3-5)*10;
 result = result + 1; // value will be added 1 with the old result.
 result++; //same as l13 and works with - too
 result +=5; // result=result+5 same for other cases.
+
+console.log("Ten" + "Traicion");
