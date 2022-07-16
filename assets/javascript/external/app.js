@@ -10,3 +10,6 @@ let job = {
 alert(hobbies[1]);
 alert(hobbies[0]);
 alert(hobbies[2]);
+
+alert("Desc: " + job.title + ", " + job.place);
+alert("Salary: " + job.salary);
