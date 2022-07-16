@@ -1,4 +1,5 @@
 let age = 23;
+let year = 2022;
 let userName = "TenTraicion";
 let hobbies = ["Sports", "Cooking", "Reading"];
 let job = {
@@ -7,9 +8,7 @@ let job = {
     salary: "$500k"
 };
 
-alert(hobbies[1]);
-alert(hobbies[0]);
-alert(hobbies[2]);
+let adultYears = age - 18;
+let born = year - age;
 
-alert("Desc: " + job.title + ", " + job.place);
-alert("Salary: " + job.salary);
+alert(adultYears + "y/o and born in: " + born);
