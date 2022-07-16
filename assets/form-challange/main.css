@@ -1,0 +1,18 @@
+body{
+    font-family: cursive;
+    background-color: rgb(236, 252, 253);
+}
+
+h1{
+    text-align: center;
+    margin: 2rem;
+}
+
+form{
+    width: 40rem;
+    margin: auto;
+    background-color: rgb(246, 250, 255);
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}

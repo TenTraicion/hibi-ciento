@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Challange</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <section>
+                <h2>How can we help you?</h2>
+                <ul>
+                    <li>
+                        <label for="name">Your Name</label>
+                        <input type="text" name="uname" id="name" placeholder="Max W. Scneilder" required>
+                    </li>
+                    <li>
+                        <label for="email">Your E-Mail Address</label>
+                        <input type="email" name="umail" id="email" placeholder="abc@mail.com" required>
+                    </li>
+                    <li>
+                        <label for="phone">Your Phone Number</label>
+                        <input type="tel" name="uphone" id="phone" placeholder="(+880) 1777 777 777" required>
+                    </li>
+                    <li>
+                        <label for="msg">Your Message</label>
+                        <textarea name="umsg" id="msg" rows="10"></textarea>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <label for="find">How did you find us?</label>
+                <select name="ufind" id="find">
+                    <option value="web">Web Search</option>
+                    <option value="mouth">Word of Mouth</option>
+                    <option value="other">Other</option>
+                </select>
+            </section>
+            
+        </form>
+    </main>
+    <footer>
+        <p class="hover"><a href="../../index.html" target="_blank" rel="noopener noreferrer" class="btn">&#x21B5 Go Back</a></p>
+    </footer>
+</body>
+</html>
