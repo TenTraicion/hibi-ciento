@@ -27,6 +27,12 @@ function fucks(userAge) {
     return userAge - 3;
 };
 
+// function fucks(userAge) {
+//     let result;
+//     result = userAge - 3;
+//     return result;
+// };
+
 fuck = fucks(age);
 
 alert(age + "y/o man can fuck approx " + fuck + "y/o lady");
