@@ -5,6 +5,6 @@ console.log(window);
 
 console.dir(document);
 
-let uname = tentraicion;
+let uname = "tentraicion";
 
-document.body.children[2].children[0].href = "https://github.com" + uname;
+document.body.children[2].children[0].href = "https://github.com/" + uname;
