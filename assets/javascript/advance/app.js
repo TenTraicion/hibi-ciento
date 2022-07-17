@@ -33,3 +33,7 @@ head.remove();
 
 //move element
 guini.parentElement.append(guini);
+
+//innerHTML
+console.log(guini.innerHTML);
+guini.innerHTML = "HI! This is <strong>important!</strong>";
