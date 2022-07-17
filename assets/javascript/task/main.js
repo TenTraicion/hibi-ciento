@@ -38,8 +38,7 @@ alert(course.goals[1]);
 //    - The custom command should provide the accessed value (i.e. the list element)
 
 function courses(list, index) {
-    let element = list[index];
-    return element;
+    return list[index];
 }
 
 // 6) Execute your custom command from (5) and output ("alert") the result

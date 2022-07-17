@@ -9,9 +9,6 @@ let uname = "tentraicion";
 let git = "https://github.com/";
 let com = "Solvinux";
 
-//drilling in DOM
-// document.body.children[2].children[0].href = "https://github.com/" + uname;
-
 // get content by id
 let anchor = document.getElementById("link");
 anchor.href = git + uname;

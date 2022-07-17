@@ -17,8 +17,7 @@ function retrieve(event) {
     let val = event.target.value; // same as up, combined data
     // let val = event.data; individual data
     console.log(val);
-    // console.log(event);
-};
+}
 
 inp.addEventListener("input", retrieve);
 
