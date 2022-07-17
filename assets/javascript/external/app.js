@@ -1,4 +1,19 @@
+let uname = "TenTraicion";
+let role = "A Programmer from Abyss";
 let age = 23;
+
+function calc(years) {
+    return 2022 - years;
+};
+
+console.log("Name: " + uname);
+console.log(role);
+console.log("Github Profile: " + "https://github.com/" + uname);
+console.log("Your Birth Year is:" + " " + calc(age));
+
+
+
+
 let year = 2022;
 let userName = "TenTraicion";
 let hobbies = ["Sports", "Cooking", "Reading"];
