@@ -10,6 +10,6 @@ function update(event) {
 
     remains.textContent = count;
     console.log ("Counted!")
-};
+}
 
 pname.addEventListener("input", update);

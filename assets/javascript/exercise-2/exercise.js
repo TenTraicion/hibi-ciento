@@ -10,18 +10,8 @@ const aoBg = document.getElementById("ao");
 // 2) Add "click" event listener to both buttons (with two different functions).
 //    The functions should "console.dir()" the clicked buttons.
 //    - Output the first button by using the variable in which it's stored
-// function rmClick() {
-//     console.dir(rmPara);
-// };
-
-// rmPara.addEventListener("click", rmClick);
-
 //    - Output the second button WITHOUT using the variable in which it's stored
-// function changeBg(event) {
-//     console.dir(event.target);
-// };
-
-// aoBg.addEventListener("click", changeBg);
+// merged with 4
 
 // 3) Now select and store the paragraphs mentioned in the text you see on the page
 //    (first and third paragraph)
@@ -30,7 +20,6 @@ const aoBg = document.getElementById("ao");
 const firstPara = document.body.children[2].children[1];
 console.log(firstPara);
 
-// const thirdPara = document.body.children[2].children[3];
 const thirdPara = firstPara.nextElementSibling.nextElementSibling;
 console.log(thirdPara);
 
@@ -40,13 +29,11 @@ console.log(thirdPara);
 //    - The second button changes the background color of the first paragraph to blue
 function rmClick() {
     thirdPara.remove();
-};
+}
 
-function changeBg(event) {
-    // firstPara.style.backgroundColor = "blue";
-    // firstPara.className = "aoBg";
+function changeBg() {
     firstPara.classList.add("aoBg");
-};
+}
 
 rmPara.addEventListener("click", rmClick);
 aoBg.addEventListener("click", changeBg);
