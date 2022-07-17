@@ -30,3 +30,6 @@ link.textContent = "Company";
 //remove element > select and remove
 let head = document.querySelector("h1");
 head.remove();
+
+//move element
+guini.parentElement.append(guini);
