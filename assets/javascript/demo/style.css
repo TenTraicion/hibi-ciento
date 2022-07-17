@@ -65,5 +65,11 @@ body {
   
   #remain.warning {
     color:#d36d1a;
+    font-size: 30px;
+    font-weight: bold;
   }
-  
+
+  #remain.pos{
+    font-size: 30px;
+    color: #00786e;
+  }
