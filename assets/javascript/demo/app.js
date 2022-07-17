@@ -1,14 +1,15 @@
-let pname = document.getElementById("pName");
-let remains = document.getElementById("remain");
-let max = pname.maxLength;
+const pname = document.getElementById("pName");
+const remains = document.getElementById("remain");
+const max = pname.maxLength;
 
 function update(event) {
-    let entry = event.target.value;
-    let entryLength = entry.length;
+    const entry = event.target.value;
+    const entryLength = entry.length;
     
-    let count = max - entryLength;
+    const count = max - entryLength;
 
     remains.textContent = count;
+    console.log ("Counted!")
 };
 
 pname.addEventListener("input", update);
