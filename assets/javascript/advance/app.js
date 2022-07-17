@@ -26,3 +26,7 @@ let guini = document.querySelector("p");
 guini.append(link);
 link.href = git + com;
 link.textContent = "Company";
+
+//remove element > select and remove
+let head = document.querySelector("h1");
+head.remove();
