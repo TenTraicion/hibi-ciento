@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
-    <header></header>
+    <form>
+        <div class="control">
+            <label for="pName">Product Name:</label>
+            <input type="text" id="pName" name="pn" maxlength="100">
+            <span id="char">
+                <span id="remain">100</span>/100
+            </span>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>

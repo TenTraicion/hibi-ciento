@@ -55,7 +55,7 @@ body {
     border-color:#d1c517;
   }
   
-  #charcount {
+  #char {
     color: #69654b;
   }
   
@@ -63,6 +63,7 @@ body {
     background-color: #f8bf91;
   }
   
-  #remaining-chars.warning {
+  #remain.warning {
     color:#d36d1a;
   }
+  
