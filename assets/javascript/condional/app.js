@@ -1,6 +1,6 @@
 const uname = "Max";
 
-if () {
+if (true) {
     console.log("Hello!");
 }
 
