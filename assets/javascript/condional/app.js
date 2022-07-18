@@ -4,6 +4,12 @@ if (uname === "Max") {
     console.log("Hello!");
 }
 
+const loggedIn = true;
+
+if (loggedIn === true) {
+    console.log("User is Logged in!");
+}
+
 if (5=="5") {
     console.log("Only compare numbers.");
 }
