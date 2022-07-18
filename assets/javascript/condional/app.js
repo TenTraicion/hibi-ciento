@@ -1,5 +1,9 @@
 const uname = "Max";
 
+if (uname === "Max") {
+    console.log("Hello!");
+}
+
 if (5=="5") {
     console.log("Only compare numbers.");
 }
