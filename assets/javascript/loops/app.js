@@ -18,3 +18,11 @@ for (const key in signIn) {
     console.log(key + ": " + signIn[key]);
     console.log(signIn[key]);
 }
+
+let finish = false;
+
+while (!finish) {
+    finish = confirm("Do you want to quit?");
+}
+
+console.log("Done!");
