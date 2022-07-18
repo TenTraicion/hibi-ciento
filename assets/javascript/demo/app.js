@@ -10,6 +10,11 @@ function update(event) {
 
     remains.textContent = count;
     console.log ("Counted!")
+
+    if(count <=10) {
+        remains.className = "warning";
+        pname.classList.add("warning");
+    }
 }
 
 pname.addEventListener("input", update);
