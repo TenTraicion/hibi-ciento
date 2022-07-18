@@ -73,3 +73,13 @@ body {
     font-size: 30px;
     color: #00786e;
   }
+
+  input.error {
+    background-color: #f89d91;
+  }
+  
+  #remain.error {
+    color:#d3361a;
+    font-size: 30px;
+    font-weight: bold;
+  }

@@ -11,9 +11,17 @@ function update(event) {
     remains.textContent = count;
     console.log ("Counted!")
 
-    if(count <=10) {
-        remains.className = "warning";
+    if(count === 0) {
+        remains.className = "error";
+        pname.classList.add("error");
+        pname.classList.remove("warning");
+    } else if(count <= 10) {
+        remains.className = "warning"
+        pname.classList.remove("error");
         pname.classList.add("warning");
+    } else {
+        remains.className = "pos";
+        pname.classList.remove("warning");
     }
 }
 
