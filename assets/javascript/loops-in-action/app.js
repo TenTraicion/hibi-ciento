@@ -89,6 +89,7 @@ function dice() {
         newLi.textContent = output;
         diceList.append(newLi);
         target = rolls == userInput;
+        console.log("Random Rolls COunt Generated!");
     }
 
     const outputX = document.getElementById("output-total-rolls");
