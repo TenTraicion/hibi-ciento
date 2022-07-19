@@ -36,3 +36,27 @@ function hlLinks () {
 hlbtn.addEventListener("click", hlLinks);
 
 // Display
+
+const display = document.querySelector("#user-data button");
+
+function disData () {
+    const signIn = {
+        name: "TenTraicion",
+        age: 23,
+        isAdmin: true
+    };
+
+    const uData = document.getElementById("output-user-data");
+    uData.innerHTML = "";
+    
+    for (const key in signIn) {
+        const newLi = document.createElement("li")
+        const db = `${key.toUpperCase()}: ${signIn[key]}`;
+        newLi.textContent = db;
+        uData.append(newLi);
+        
+        console.log("User Data has been Displayed!");
+    }
+}
+
+display.addEventListener("click", disData);
