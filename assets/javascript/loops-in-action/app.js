@@ -60,3 +60,42 @@ function disData () {
 }
 
 display.addEventListener("click", disData);
+
+// Statistics
+
+const statbtn = document.querySelector("#statistics button");
+
+function roll() {
+    return  Math.floor(Math.random() * 6) + 1; //floor to round, and random to randomize
+}
+
+function dice() {
+    const userInput = document.getElementById("user-target-number").value;
+    const diceList = document.getElementById("dice-rolls");
+    diceList.innerHTML = "";
+
+    let target = false;
+    let nroll = 0;
+
+    while (!target) {
+        const rolls = roll();
+        // if (rolls == userInput) {
+        //     target = true;
+        // }
+        nroll++;
+
+        const newLi = document.createElement("li");
+        const output = `Roll ${nroll}: ${rolls}`;
+        newLi.textContent = output;
+        diceList.append(newLi);
+        target = rolls == userInput;
+    }
+
+    const outputX = document.getElementById("output-total-rolls");
+    const outputY = document.getElementById("output-target-number");
+
+    outputY.textContent = userInput;
+    outputX.textContent = nroll;
+}
+
+statbtn.addEventListener("click", dice);
