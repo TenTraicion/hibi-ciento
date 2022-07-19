@@ -18,3 +18,21 @@ function calc() {
 }
 
 calcSum.addEventListener("click", calc);
+
+// Highlight
+
+const hlbtn = document.querySelector("#highlight-links button");
+
+function hlLinks () {
+    const anchors = document.querySelectorAll("#highlight-links a");
+
+    for (const anchor of anchors) {
+        anchor.classList.add("highlight");
+    }
+
+    console.log(`All anchor links have been highlighted!`);
+}
+
+hlbtn.addEventListener("click", hlLinks);
+
+// Display
