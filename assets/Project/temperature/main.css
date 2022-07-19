@@ -1,0 +1,12 @@
+html{
+    --color-bg-100: #faebd7;
+    --color-bg-300: #f0f8ff;
+    --color-bg-500: #44484c;
+    --color-bg-700: #292727;
+}
+
+body{
+    background-color: var(--color-bg-500);
+    color: var(--color-bg-300);
+}
+
