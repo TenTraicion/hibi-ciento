@@ -79,16 +79,13 @@ function dice() {
 
     while (!target) {
         const rolls = roll();
-        // if (rolls == userInput) {
-        //     target = true;
-        // }
         nroll++;
 
         const newLi = document.createElement("li");
         const output = `Roll ${nroll}: ${rolls}`;
         newLi.textContent = output;
         diceList.append(newLi);
-        target = rolls == userInput;
+        target = rolls == userInput; // change value of target to true;
         console.log("Random Rolls COunt Generated!");
     }
 
