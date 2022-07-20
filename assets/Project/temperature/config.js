@@ -29,3 +29,79 @@ function f2c() {
 }
 
 cValue.addEventListener("click", f2c);
+
+// Calculation
+
+const ix = document.getElementById("x"); 
+const iy = document.getElementById("y");
+const o = document.getElementById("calc");
+const s = document.getElementById("s");
+const a = document.getElementById("a");
+const m = document.getElementById("m");
+const d = document.getElementById("d");
+const c = document.getElementById("c");
+const f = document.getElementById("r");
+
+function sum() {
+    const x = +ix.value;
+    const y = +iy.value;
+    o.innerHTML = "";
+    c.innerHTML = "";
+    f.innerHTML = "";
+    const r = x + y;
+    const p = `The ans of ${x} + ${y} is: ${r}`
+    console.log(p);
+    c.textContent = "+";
+    o.textContent = r;
+    f.textContent = p;
+}
+
+s.addEventListener("click", sum);
+
+function add() {
+    const x = +ix.value;
+    const y = +iy.value;
+    o.innerHTML = "";
+    c.innerHTML = "";
+    f.innerHTML = "";
+    const r = x - y;
+    const p = `The ans of ${x} - ${y} is: ${r}`
+    console.log(p);
+    c.textContent = "-";
+    o.textContent = r;
+    f.textContent = p;
+}
+
+a.addEventListener("click", add);
+
+function mul() {
+    const x = +ix.value;
+    const y = +iy.value;
+    o.innerHTML = "";
+    c.innerHTML = "";
+    f.innerHTML = "";
+    const r = x * y;
+    const p = `The ans of ${x} x ${y} is: ${r}`
+    console.log(p);
+    c.textContent = "X";
+    o.textContent = r;
+    f.textContent = p;
+}
+
+m.addEventListener("click", mul);
+
+function div() {
+    const x = +ix.value;
+    const y = +iy.value;
+    o.innerHTML = "";
+    c.innerHTML = "";
+    f.innerHTML = "";
+    const r = x / y;
+    const p = `The ans of ${x} / ${y} is: ${r}`
+    console.log(p);
+    c.textContent = "/";
+    o.textContent = r;
+    f.textContent = p;
+}
+
+d.addEventListener("click", div);

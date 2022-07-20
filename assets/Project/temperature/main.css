@@ -79,7 +79,7 @@ hr{
 
 .fact p span{
     display: block;
-    width: 300px;
+    width: fit-content;
     text-align: center;
     margin: auto;
 }
@@ -106,6 +106,31 @@ button{
     font-size: 2rem;
     color: var(--color-a-hov);
     background-color: var(--color-hl-dark);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn button{
+    padding: 20px 60px;
+}
+
+p#r{
+    width: fit-content;
+    margin: auto;
+    background-color: var(--color-hl-mid);
     padding: 10px;
     border-radius: 10px;
 }

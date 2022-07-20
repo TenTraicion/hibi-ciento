@@ -25,7 +25,7 @@
             <div><h2>Calculate Celsius to Fahrenheit</h2><hr></div>
             <div class="c2f fact">
                 <label for="celsius">Enter Celsius Temperature:</label>
-                <input type="text" name="c" id="celsius">
+                <input type="number" name="c" id="celsius">
                 <button>Submit</button>
                 <p>Output: <span id="c2f" class="output"></span></p>
             </div>
@@ -34,9 +34,33 @@
             <div><h2>Calculate Fahrenheit to Celsius</h2><hr></div>
             <div class="f2c fact">
                 <label for="fahrenheit">Enter Fahrenheit Temperature:</label>
-                <input type="text" name="f" id="fahrenheit">
+                <input type="number" name="f" id="fahrenheit">
                 <button>Submit</button>
                 <p>Output: <span id="f2c" class="output"></span></p>
+            </div>
+        </div>
+        <div class="form">
+            <div><h2>Simple Calculation</h2><hr></div>
+            <div class="fact">
+                <ul><li>
+                    <label for="x">Input X: </label>
+                    <input type="number" name="x" id="x">
+                </li>
+                <li><span class="output" id="c"></span></li>
+                <li>
+                    <label for="y">Input Y: </label>
+                    <input type="number" name="y" id="y">
+                </li></ul>
+            </div>
+            <div class="fact btn">
+                <button id="s">+</button>
+                <button id="a">-</button>
+                <button id="m">x</button>
+                <button id="d">/</button>
+            </div>
+            <div class="fact">
+                <p>Output: <span id="calc" class="output"></span></p>
+                <p id="r"></p>
             </div>
         </div>
     </main>
