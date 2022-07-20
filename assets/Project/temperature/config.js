@@ -1,3 +1,45 @@
+// copyright
+const copy = document.getElementById("copy");
+const udate = new Date();
+copy.innerText = udate.getFullYear();
+
+// show date
+const show = document.getElementById("date");
+
+const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ]
+
+const days = [
+    'Sun',
+    'Mon',
+    'Tues',
+    'Wednes',
+    'Thurs',
+    'Fri',
+    'Satur'
+  ]
+
+const da = udate.getDay();
+const day = days[da];
+const date = udate.getDate();
+const mo = udate.getMonth();
+const month = months[mo];
+const year = udate.getFullYear();
+const today = `${day}day, ${month} ${date}, ${year}`;
+show.innerHTML = today;
+
 // c2f
 
 const fValue = document.querySelector(".c2f button");
@@ -97,10 +139,10 @@ function div() {
     c.innerHTML = "";
     f.innerHTML = "";
     const r = x / y;
-    const p = `The ans of ${x} / ${y} is: ${r}`
+    const p = `The ans of ${x} / ${y} is: ${r.toFixed(4)}`
     console.log(p);
     c.textContent = "/";
-    o.textContent = r;
+    o.textContent = r.toFixed(4);
     f.textContent = p;
 }
 

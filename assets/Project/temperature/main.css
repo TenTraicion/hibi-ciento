@@ -16,6 +16,10 @@ body{
     margin: 0;
 }
 
+h2{
+    text-align: center;
+}
+
 header{
     background-color: var(--color-hl-dark);
     display: flex;
@@ -132,5 +136,22 @@ p#r{
     margin: auto;
     background-color: var(--color-hl-mid);
     padding: 10px;
+    border-radius: 10px;
+}
+
+.text-block{
+    background-image: url(https://raw.githubusercontent.com/bornmay/bornmay/Update/svg/Bottom.svg);
+    text-align: center;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    font-family: cursive;
+}
+
+.copy{
+    text-align: right;
+    position: relative;
+    top: 245px;
+    margin-right: 1rem;
     border-radius: 10px;
 }

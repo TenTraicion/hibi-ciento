@@ -21,6 +21,7 @@
         </nav>
     </header>
     <main>
+        <h2>Today is: <span id="date"></span></h2>
         <div class="form">
             <div><h2>Calculate Celsius to Fahrenheit</h2><hr></div>
             <div class="c2f fact">
@@ -58,12 +59,25 @@
                 <button id="m">x</button>
                 <button id="d">/</button>
             </div>
+            <div class="fact btn">
+                <button>%</button>
+                <button>+%</button>
+                <button>-%</button>
+                <button>?%</button>
+            </div>
             <div class="fact">
                 <p>Output: <span id="calc" class="output"></span></p>
                 <p id="r"></p>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer class="text-block">
+        <p class="copy">
+            &copy; Copyright
+            <span id="copy"></span>
+            ,
+            <a href="https://github.com/TenTraicion"> TenTraicion</a>
+        </p>
+</footer>
 </body>
 </html>
