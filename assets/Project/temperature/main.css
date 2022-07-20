@@ -1,12 +1,111 @@
 html{
-    --color-bg-100: #faebd7;
-    --color-bg-300: #f0f8ff;
-    --color-bg-500: #44484c;
-    --color-bg-700: #292727;
+    --color-hl-light: #faebd7;
+    --color-hl-mid: #4b4848;
+    --color-hl-dark: #292727;
+    --color-bg-dark: #22272e;
+    --color-bg-box: #44484c;
+    --color-txt-light: #f0f8ff;
+    --color-a-def: #00ffff;
+    --color-a-hov: #ffe4c4;
 }
 
 body{
-    background-color: var(--color-bg-500);
-    color: var(--color-bg-300);
+    background-color: var(--color-bg-dark);
+    color: var(--color-txt-light);
+    font-family: cursive;
+    margin: 0;
 }
 
+header{
+    background-color: var(--color-hl-dark);
+    display: flex;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding-right: 10px;
+}
+
+nav li{
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-a-def);
+}
+
+a:hover{
+    color: var(--color-a-hov);
+}
+
+nav a:hover{
+    background-color: var(--color-bg-box);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+header p{
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.form{
+    background-color: var(--color-bg-box);
+    width: 50rem;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+.form h2{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+hr{
+    width: 60%;
+}
+
+.fact{
+    padding: 1rem;
+}
+
+.fact p span{
+    display: block;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+input{
+    width: 100px;
+    font-size: 2rem;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    background-color: var(--color-hl-dark);
+    color: var(--color-a-def);
+    text-align: center;
+}
+
+button{
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: var(--color-hl-mid);
+    color: var(--color-txt-light);
+    padding: 10px;
+}
+
+.output{
+    font-size: 2rem;
+    color: var(--color-a-hov);
+    background-color: var(--color-hl-dark);
+    padding: 10px;
+    border-radius: 10px;
+}
