@@ -43,15 +43,20 @@
         <div class="form">
             <div><h2>Simple Calculation</h2><hr></div>
             <div class="fact">
-                <ul><li>
-                    <label for="x">Input X: </label>
-                    <input type="number" name="x" id="x">
-                </li>
-                <li><span class="output" id="c"></span></li>
-                <li>
-                    <label for="y">Input Y: </label>
-                    <input type="number" name="y" id="y">
-                </li></ul>
+                <ul>
+                    <li>
+                        <label for="x">Input X: </label>
+                        <input type="number" name="x" id="x">
+                    </li>
+                    <li>
+                        <span class="output" id="c"></span>
+                    </li>
+                    <li>
+                        <label for="y">Input Y: </label>
+                        <input type="number" name="y" id="y">
+                    </li>
+                    <li><span class="output" id="pShow"></span></li>
+                </ul>
             </div>
             <div class="fact btn">
                 <button id="s">+</button>
@@ -60,10 +65,10 @@
                 <button id="d">/</button>
             </div>
             <div class="fact btn">
-                <button>%</button>
-                <button>+%</button>
-                <button>-%</button>
-                <button>?%</button>
+                <button id="pm">%</button>
+                <button id="ps">+%</button>
+                <button id="pa">-%</button>
+                <button id="pw">?%</button>
             </div>
             <div class="fact">
                 <p>Output: <span id="calc" class="output"></span></p>

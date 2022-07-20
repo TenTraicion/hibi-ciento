@@ -83,6 +83,11 @@ const m = document.getElementById("m");
 const d = document.getElementById("d");
 const c = document.getElementById("c");
 const f = document.getElementById("r");
+const pm = document.getElementById("pm");
+const ps = document.getElementById("ps");
+const pa = document.getElementById("pa");
+const pw = document.getElementById("pw");
+const q = document.getElementById("pShow");
 
 function sum() {
     const x = +ix.value;
@@ -90,12 +95,14 @@ function sum() {
     o.innerHTML = "";
     c.innerHTML = "";
     f.innerHTML = "";
+    q.innerHTML = "";
     const r = x + y;
     const p = `The ans of ${x} + ${y} is: ${r}`
     console.log(p);
     c.textContent = "+";
     o.textContent = r;
     f.textContent = p;
+    q.textContent = "=";
 }
 
 s.addEventListener("click", sum);
@@ -106,12 +113,14 @@ function add() {
     o.innerHTML = "";
     c.innerHTML = "";
     f.innerHTML = "";
+    q.innerHTML = "";
     const r = x - y;
     const p = `The ans of ${x} - ${y} is: ${r}`
     console.log(p);
     c.textContent = "-";
     o.textContent = r;
     f.textContent = p;
+    q.textContent = "=";
 }
 
 a.addEventListener("click", add);
@@ -122,12 +131,14 @@ function mul() {
     o.innerHTML = "";
     c.innerHTML = "";
     f.innerHTML = "";
+    q.innerHTML = "";
     const r = x * y;
     const p = `The ans of ${x} x ${y} is: ${r}`
     console.log(p);
     c.textContent = "X";
     o.textContent = r;
     f.textContent = p;
+    q.textContent = "=";
 }
 
 m.addEventListener("click", mul);
@@ -138,12 +149,86 @@ function div() {
     o.innerHTML = "";
     c.innerHTML = "";
     f.innerHTML = "";
+    q.innerHTML = "";
     const r = x / y;
     const p = `The ans of ${x} / ${y} is: ${r.toFixed(4)}`
     console.log(p);
     c.textContent = "/";
     o.textContent = r.toFixed(4);
     f.textContent = p;
+    q.textContent = "=";
 }
 
 d.addEventListener("click", div);
+
+function per() {
+    const x = +ix.value;
+    const y = +iy.value;
+    o.innerHTML = "";
+    c.innerHTML = "";
+    f.innerHTML = "";
+    q.innerHTML = "";
+    const r = (x * y) / 100;
+    const p = `${y}% of ${x} is: ${r.toFixed(4)}`
+    console.log(p);
+    c.textContent = "X";
+    o.textContent = r.toFixed(4);
+    f.textContent = p;
+    q.textContent = "%";
+}
+
+pm.addEventListener("click", per);
+
+function perp() {
+    const x = +ix.value;
+    const y = +iy.value;
+    o.innerHTML = "";
+    c.innerHTML = "";
+    f.innerHTML = "";
+    q.innerHTML = "";
+    const r = x + ((x * y) / 100);
+    const p = `The increment of ${x} in ${y}% is: ${r.toFixed(4)}`
+    console.log(p);
+    c.textContent = "+";
+    o.textContent = r.toFixed(4);
+    f.textContent = p;
+    q.textContent = "%";
+}
+
+ps.addEventListener("click", perp);
+
+function perm() {
+    const x = +ix.value;
+    const y = +iy.value;
+    o.innerHTML = "";
+    c.innerHTML = "";
+    f.innerHTML = "";
+    q.innerHTML = "";
+    const r = x - ((x * y) / 100);
+    const p = `The decrement of ${x} in ${y}% is: ${r.toFixed(4)}`
+    console.log(p);
+    c.textContent = "-";
+    o.textContent = r.toFixed(4);
+    f.textContent = p;
+    q.textContent = "%";
+}
+
+pa.addEventListener("click", perm);
+
+function perd() {
+    const x = +ix.value;
+    const y = +iy.value;
+    o.innerHTML = "";
+    c.innerHTML = "";
+    f.innerHTML = "";
+    q.innerHTML = "";
+    const r = (y * 100) / x;
+    const p = `The number ${y} is ${x}'s ${r.toFixed(4)}%`
+    console.log(p);
+    c.textContent = "~";
+    o.textContent = `${r.toFixed(4)}%`;
+    f.textContent = p;
+    q.textContent = "=";
+}
+
+pw.addEventListener("click", perd);
