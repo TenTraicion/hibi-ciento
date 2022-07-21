@@ -18,7 +18,23 @@ function switchP() {
 }
 
 function sfield(event) {
-  event.target.textContent = players[active].symbol;
-  event.target.classList.add("del");
+  const setField = event.target;
+  const setCol = setField.dataset.col - 1;
+  const setRow = setField.dataset.row - 1;
+
+  if (gameData[setRow][setCol] > 0) {
+    alert("Please select an Empty Field!");
+    console.log("Invalid Selection! Try Again!");
+    return;
+  }
+
+  setField.textContent = players[active].symbol;
+  setField.classList.add("del");
+
+
+  gameData[setRow][setCol] = active + 1;
+
+  console.log(`${players[active].name} has Played!`);
+
   switchP();
 }

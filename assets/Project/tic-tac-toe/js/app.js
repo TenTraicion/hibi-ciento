@@ -1,3 +1,9 @@
+let gameData = [
+  [0, 0, 0],
+  [0, 0, 0],
+  [0, 0, 0],
+]
+
 let player = 0;
 let active = 0;
 
