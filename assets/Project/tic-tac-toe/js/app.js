@@ -7,6 +7,7 @@ let gameData = [
 let player = 0;
 let active = 0;
 let round = 1;
+let gameOver = false;
 
 const players = [
   {
@@ -26,6 +27,8 @@ const error = document.getElementById("error");
 const game = document.getElementById("game");
 const fields = document.querySelectorAll("#board li");
 const activePlayer = document.getElementById("player");
+const overG = document.getElementById("over");
+const winner = document.getElementById("winner")
 
 const ex = document.getElementById("ex");
 const ey = document.getElementById("ey");
