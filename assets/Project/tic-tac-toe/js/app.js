@@ -6,6 +6,7 @@ let gameData = [
 
 let player = 0;
 let active = 0;
+let round = 1;
 
 const players = [
   {
@@ -24,7 +25,7 @@ const form = document.querySelector("form");
 const error = document.getElementById("error");
 const game = document.getElementById("game");
 const fields = document.querySelectorAll("#board li");
-const activePlayer = document.getElementById("active");
+const activePlayer = document.getElementById("player");
 
 const ex = document.getElementById("ex");
 const ey = document.getElementById("ey");
