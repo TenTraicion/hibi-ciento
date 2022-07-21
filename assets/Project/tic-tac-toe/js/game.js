@@ -2,8 +2,7 @@ function reset() {
   active = 0;
   round = 1;
   gameOver = false;
-  overG.firstElementChild.innerHTML =
-      "You Won! <span id=\"winner\">Name</span>";
+  overG.firstElementChild.innerHTML = 'You Won! <span id="winner">Name</span>';
   overG.style.display = "none";
 
   let field = 0;
@@ -63,7 +62,7 @@ function sfield(event) {
   const win = over();
 
   if (win !== 0) {
-    console.log("Checking for a Winner!")
+    console.log("Checking for a Winner!");
     end(win);
   }
 
@@ -76,29 +75,41 @@ function sfield(event) {
 function over() {
   // Check Rows
   for (let i = 0; i < 3; i++) {
-    if (gameData[i][0] > 0 && gameData[i][0] === gameData[i][1] &&
-        gameData[i][0] === gameData[i][2]) {
+    if (
+      gameData[i][0] > 0 &&
+      gameData[i][0] === gameData[i][1] &&
+      gameData[i][0] === gameData[i][2]
+    ) {
       return gameData[i][0];
     }
   }
 
   // Check Cols
   for (let i = 0; i < 3; i++) {
-    if (gameData[0][i] > 0 && gameData[0][i] === gameData[1][i] &&
-        gameData[0][i] === gameData[2][i]) {
+    if (
+      gameData[0][i] > 0 &&
+      gameData[0][i] === gameData[1][i] &&
+      gameData[0][i] === gameData[2][i]
+    ) {
       return gameData[0][i];
     }
   }
 
   // Check \
-  if (gameData[0][0] > 0 && gameData[0][0] === gameData[1][1] &&
-      gameData[0][0] === gameData[2][2]) {
+  if (
+    gameData[0][0] > 0 &&
+    gameData[0][0] === gameData[1][1] &&
+    gameData[0][0] === gameData[2][2]
+  ) {
     return gameData[0][0];
   }
 
   // Check /
-  if (gameData[2][0] > 0 && gameData[2][0] === gameData[1][1] &&
-      gameData[2][0] === gameData[0][2]) {
+  if (
+    gameData[2][0] > 0 &&
+    gameData[2][0] === gameData[1][1] &&
+    gameData[2][0] === gameData[0][2]
+  ) {
     return gameData[2][0];
   }
 
@@ -115,7 +126,7 @@ function end(win) {
 
   if (win > 0) {
     overG.firstElementChild.firstElementChild.textContent =
-        players[win - 1].name + "!";
+      players[win - 1].name + "!";
     console.log(`${players[win - 1].name} has Won! Congrats!`);
   } else {
     overG.firstElementChild.textContent = "It's A Draw";
