@@ -6,17 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Tic Tac Toe</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/ovrl.css">
+		<link rel="stylesheet" href="css/config.css">
 	</head>
 	<body>
+		<div id="backdrop"></div>
 		<header id="head">
 			<h1>Play Tic Tac Toe</h1>
 			<p>Built with HTML, CSS and JS</p>
 		</header>
 		<main>
-			<aside>
+			<aside class="modal" id="ovrl">
 				<h2>Choose Your Name</h2>
 				<form>
-					<div>
+					<div class="form">
 						<label for="uname">Player Name:</label>
 						<input type="text" name="uname" id="uname">
 					</div>
@@ -32,7 +35,7 @@
 						<article>
 							<h2>Player X</h2>
 							<h3>Name</h3>
-							<p>X</p>
+							<p class="sym">X</p>
 							<button class="btn alt">Edit</button>
 						</article>
 					</li>
@@ -40,7 +43,7 @@
 						<article>
 							<h2>Player Y</h2>
 							<h3>Name</h3>
-							<p>O</p>
+							<p class="sym">O</p>
 							<button class="btn alt">Edit</button>
 						</article>
 					</li>
