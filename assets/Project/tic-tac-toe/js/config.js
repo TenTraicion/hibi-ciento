@@ -1,4 +1,5 @@
-function openConfig() {
+function openConfig(event) {
+  player = +event.target.dataset.player;
   ovrl.style.display = "block";
   backdrop.style.display = "block";
   console.log("Input Box Opened!")
@@ -9,6 +10,7 @@ function closeConfig() {
   backdrop.style.display = "none";
   form.firstElementChild.classList.remove("error");
   error.textContent = "";
+  form.firstElementChild.lastElementChild.value = "";
   console.log("Input Box Closed!")
 }
 
@@ -23,5 +25,17 @@ function saveConfig(event) {
     return;
   }
 
-  console.log(`Welcome to the Board! ${uname}!`);
+  const updatePlayer = document.getElementById(`p${player}`);
+  updatePlayer.children[1].textContent = uname;
+
+  players[player - 1].name = uname;
+
+  const playerGreet = {
+    1 : "X",
+    2 : "Y",
+  };
+
+  console.log(`Welcome to the Board! ${uname}!\n You are now Player ${playerGreet[player]}! Happy Gaming!`);
+
+  closeConfig();
 }

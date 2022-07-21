@@ -1,3 +1,16 @@
+let player = 0;
+
+const players = [
+  {
+    name: "",
+    symbol: "X"
+  },
+  {
+    name: "",
+    symbol: "O"
+  },
+]
+
 const ovrl = document.getElementById("ovrl");
 const backdrop = document.getElementById("backdrop");
 const form = document.querySelector("form");
