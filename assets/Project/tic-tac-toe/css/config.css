@@ -24,13 +24,18 @@
 }
 
 .error label{
-  color: rgb(136, 2, 2);
+  color: #880202;
 }
 
 .error input{
-  border-color: rgb(136, 2, 2);
-  color: rgb(136, 2, 2);
-  background-color: rgb(253, 219, 219);
+  border-color: #880202;
+  color: #880202;
+  background-color: #fddbdb;
+}
+
+#error{
+  color: #880202;
+  font-weight: bold;
 }
 
 #config{

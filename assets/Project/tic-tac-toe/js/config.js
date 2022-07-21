@@ -22,6 +22,7 @@ function saveConfig(event) {
   if (!uname) {
     event.target.firstElementChild.classList.add("error");
     error.textContent = "Please Enter a Valid Name";
+    console.log("The Input is Invalid!");
     return;
   }
 
