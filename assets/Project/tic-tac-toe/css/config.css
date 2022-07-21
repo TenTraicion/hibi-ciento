@@ -41,9 +41,9 @@
   margin: 1rem;
   padding: 1rem;
   width: 50%;
-  background-color: rgb(243, 227, 255);
+  background-color: #f3e3ff;
   border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 4px #00000033;
 }
 
 #config h2{
@@ -54,12 +54,12 @@
 #config h3{
   font-size: 1.5rem;
   margin: .5rem 0;
-  color: rgb(9, 4, 168);
+  color: #0904a8;
 }
 
 .sym{
   font-size: 2rem;
   font-weight: bold;
-  color: rgb(47, 4, 82);
+  color: #2f0452;
   margin: .5rem 0;
 }

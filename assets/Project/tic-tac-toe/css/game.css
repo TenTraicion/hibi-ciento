@@ -9,9 +9,9 @@
   margin: auto;
   width: 90%;
   padding: 1rem 2rem;
-  background-color: rgb(50, 5, 87);
+  background-color: #320557;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 8px #00000033;
   border-radius: 4px;
   display: none;
 }
@@ -23,7 +23,7 @@
 
 #player{
   font-weight: bold;
-  color: rgb(50, 5, 87);
+  color: #320557;
 }
 
 #board{
@@ -38,7 +38,7 @@
 }
 
 #board li{
-  background-color: rgb(215, 187, 247);
+  background-color: #d7bbf7;
   border-radius: 2px;
   cursor: pointer;
   display: flex;
@@ -49,11 +49,11 @@
 }
 
 #board li:hover{
-  background-color: rgb(112, 13, 204);
+  background-color: #700dcc;
 }
 
 #board li.del{
-  background-color: rgb(112, 13, 204);
+  background-color: #700dcc;
   color: #fff;
   cursor: default;
 }
