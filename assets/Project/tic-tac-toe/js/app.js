@@ -1,6 +1,7 @@
 const ovrl = document.getElementById("ovrl");
 const backdrop = document.getElementById("backdrop");
 const form = document.querySelector("form");
+const error = document.getElementById("error");
 
 const ex = document.getElementById("ex");
 const ey = document.getElementById("ey");
