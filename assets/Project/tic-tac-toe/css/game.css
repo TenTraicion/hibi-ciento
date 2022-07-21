@@ -11,7 +11,7 @@
   padding: 1rem 2rem;
   background-color: rgb(50, 5, 87);
   color: #fff;
-  box-shadow: 0 2ox 8px rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
   border-radius: 4px;
   display: none;
 }
