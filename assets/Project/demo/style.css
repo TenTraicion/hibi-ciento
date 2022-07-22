@@ -1,0 +1,137 @@
+body{
+  background-color: rgb(37, 37, 37);
+  color: #fff;
+  margin: 0;
+  font-family: cursive;
+}
+
+#backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.modal{
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #22272e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#exit{
+  padding: 3px 5px;
+  border: 1px solid #fff;
+  width: fit-content;
+  font-size: 1rem;
+}
+
+form input, form textarea{
+  display: none;
+}
+
+#ovrl{
+  display: none;
+  justify-content: space-between;
+}
+
+.form{
+  text-align: center;
+}
+
+hr{
+  width: 80%;
+}
+
+.form ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form h1{
+  margin: .5rem 0;
+  font-size: 2rem;
+}
+
+.form p{
+  font-size: .8rem;
+  margin: .5rem 0;
+}
+
+.form input, .form textarea{
+  font: inherit;
+  border: 1px solid #ccc;
+  width: 20rem;
+  padding: .35rem;
+  margin-bottom: .5rem;
+  border-radius: 10px;
+}
+
+.form textarea{
+  resize: none;
+}
+
+.form label{
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+
+.input{
+  text-align: left;margin-left: 2rem;
+}
+
+.chk label{
+  display: inline;
+}
+
+.chk input{
+  width: 1rem;
+  margin-top: .5rem;
+}
+
+.btn{
+  font: inherit;
+  padding: .5rem 1.5rem;
+  margin-top: 1rem;
+  background-color: #8c00ff;
+  border: 1px solid #8c00ff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn:hover{
+  background-color: #4f0abe;
+  border-color: #4f0abe;
+}
+
+textarea.warning {
+  background-color: #f8bf91;
+}
+
+#count.warning {
+  color:#d36d1a;
+  font-weight: bold;
+}
+
+#count.pos{
+  color: #00786e;
+}
+
+textarea.error {
+  background-color: #f89d91;
+}
+
+#count.error {
+  color:#d3361a;
+  font-weight: bold;
+}

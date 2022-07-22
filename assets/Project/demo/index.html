@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="form.js" defer></script>
+</head>
+<body>
+  <div id="backdrop"></div>
+  <header>
+    <h1>HIBI CIENTO</h1>
+  </header>
+  <main>
+    <h1 id="contact">CONTACT ME</h1>
+    <aside class="modal" id="ovrl">
+      <div class="form">
+        <div>
+          <h1>EMail Submission</h1>
+          <p>Please Fill Out the Form to submit an Email</p><hr>
+        </div>
+        <div class="input">
+          <ul>
+            <li>
+              <label for="uname">Enter Your Full Name:</label>
+              <input type="text" name="Name" id="uname" required>
+            </li>
+            <li>
+              <label for="email">Your Email:</label>
+              <input type="email" name="Email" id="email" required>
+            </li>
+            <li>
+              <label for="git">GitHub Username:</label>
+              <input type="text" name="GitHub" id="git" required>
+            </li>
+            <li>
+              <label for="twit">Twitter Username:</label>
+              <input type="text" name="Twitter" id="twit" required>
+            </li>
+          </ul>
+        </div><hr>
+        <div class="input">
+          <ul>
+            <li>
+              <label for="sub">Subject:</label>
+              <input type="text" name="sub" id="sub" required>
+            </li>
+            <li>
+              <label for="msg">Your Message: <span id="count" class="pos">200</span>/ 200</label>
+              <textarea name="msg" id="msg" rows="4" maxlength="200" required></textarea>
+            </li></ul></div><hr>
+            <div class="chk"><ul>
+            <li>
+              <input type="checkbox" name="true" id="chk">
+              <label for="chk">I acknowledge that, after submitting the form this will take me to Gmail and I will knowingly send the mail from my own Gmail account.</label>
+            </li></ul></div>
+        <div>
+          <form action="https://mail.google.com/mail/" method="get">
+            <input type="text" name="view" value="cm">
+            <input type="text"
+            name="fs" value="1">
+            <input type="text" name="tf" value="1">
+            <input type="text" name="to"
+            value="tentraicion@gmail.com">
+            <input type="text" name="su" id="subject">
+            <textarea name="body" id="body"></textarea>
+            <button type="submit" id="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="exit">
+        <p id="exit">X</p>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <h1>HIBI CIENTO</h1>
+  </footer>
+</body>
+</html>
