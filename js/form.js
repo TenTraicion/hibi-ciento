@@ -1,3 +1,8 @@
+// Calling Copyright Variable
+const copy = document.getElementById("copy");
+const udate = new Date();
+copy.innerText = udate.getFullYear();
+
 // Calling Contact
 const contact = document.getElementById("contact");
 const backdrop = document.getElementById("backdrop");
@@ -13,7 +18,6 @@ const git = document.getElementById("git");
 const twit = document.getElementById("twit");
 const sub = document.getElementById("sub");
 const msg = document.getElementById("msg");
-const max = msg.maxLength;
 
 //creating output
 const subject = document.getElementById("subject");
@@ -22,8 +26,8 @@ const body = document.getElementById("body");
 // Add Listener for Contact
  contact.addEventListener("click", openConfig);
 
- //close listener
- cancel.addEventListener("click", closeConfig);
+//close listener
+cancel.addEventListener("click", closeConfig);
 backdrop.addEventListener("click", closeConfig);
 
 // checkbox
@@ -60,16 +64,15 @@ function checked() {
 //count
 function update(event) {
   const entry = event.target.value;
-    const entryLength = entry.length;
     
-    const count = max - entryLength;
+  const count = msg.maxLength - entry.length;
 
-    remains.textContent = count;
+  remains.textContent = count;
 
-    if(count <= 10) {
-      remains.className = "error";
-      msg.classList.add("error");
-      msg.classList.remove("warning");
+  if(count <= 10) {
+    remains.className = "error";
+    msg.classList.add("error");
+    msg.classList.remove("warning");
   } else if(count <= 50) {
       remains.className = "warning"
       msg.classList.remove("error");
