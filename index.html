@@ -6,23 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/master.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/form.css">
     <link
       rel="icon"
       href="https://tentraicion.github.io/TenTraicion/assets/ten/favicon.ico"
       type="image/x-icon"
     />
     <title>Learn 100 Days of Code</title>
+    <script src="js/config.js" defer></script>
+    <script src="js/call.js" defer></script>
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
   <body>
-    <a
+    <div id="backdrop"></div>
+    <p class="ciento"><a
       href="https://github.com/Solvinux"
       target="_blank"
       rel="noopener noreferrer"
-      ><img class="ciento" src="img/hibi-ciento.png" alt="hibi-ciento"
-    /></a>
+      >Hibi-Ciento</a></p>
     <header>
       <a
         href="https://tentraicion.github.io"
@@ -33,37 +36,113 @@
           src="https://tentraicion.github.io/TenTraicion/assets/ten/logo.png"
           alt="TenTraicions"
       /></a>
-      <div>
+      <div class="box">
         <h1>/u/<span>TenTraicion</span>.bin</h1>
-        <p class="hoe">I started Learning HTML and CSS</p>
+        <p>A Programmer from Abyss</p>
       </div>
     </header>
     <main>
-      <p class="fuck">I want to build my own project with it.</p>
-      <p class="hoe">
-        Started Understanding the core concepts and
-        Building up the foundation
-      </p>
-      <p class="fuck">Visit to View: <a href="another.html">My Working Flowchart.</a></p>
+      <div class="box">
+        <h2>A Project to index every Progress I Made</h2>
+        <p>I've Learned HTML & CSS</p>
+        <p>I am Currently Learning JavaScript</p>
+        <p>If you know knoe my timeline Accuratle You may Visit:</p>
+        <p class="btn"><a href="another.html">Timeline</a></p>
+      </div>
+      <div class="box">
+        <h2>You can also Check:</h2>
+        <p>&#x21AA <a href="https://tentraicion.github.io">MY Website</a></p>
+        <p>&#x21AA <a href="https://github.com/TenTraicion">MY Github Profile</a></p>
+        <p>&#x21AA <a href="https://twitter.com/TenTraicion">MY Twitter Profile</a></p>
+        <p>&#x21AA <a href="https://discord.com/invite/BCf59exHJV">MY Discord Server</a></p>
+        <p id="contact">&#x21AA Contact me By Mail</p>
+      </div>
+      <div>
+        <p><!-- Place this tag where you want the button to render. -->
+          <a class="github-button" href="https://github.com/TenTraicion/hibi-ciento/fork" data-show-count="true" aria-label="Fork TenTraicion/hibi-ciento on GitHub">Fork</a>
+          <!-- Place this tag where you want the button to render. -->
+          <a class="github-button" href="https://github.com/TenTraicion/hibi-ciento/issues" data-show-count="true" aria-label="Issue TenTraicion/hibi-ciento on GitHub">Issue</a>
+          <!-- Place this tag where you want the button to render. -->
+          <a class="github-button" href="https://github.com/TenTraicion/hibi-ciento/discussions" aria-label="Discuss TenTraicion/hibi-ciento on GitHub">Discuss</a>
+          <!-- Place this tag where you want the button to render. -->
+          <a class="github-button" href="https://github.com/TenTraicion/hibi-ciento/archive/HEAD.zip" aria-label="Download TenTraicion/hibi-ciento on GitHub">Download</a>
+          <!-- Place this tag where you want the button to render. -->
+          <a class="github-button" href="https://github.com/TenTraicion/hibi-ciento/subscription" data-show-count="true" aria-label="Watch TenTraicion/hibi-ciento on GitHub">Watch</a>
+        </p>
+        <p>
+          <!-- Place this tag where you want the button to render. -->
+          <a class="github-button" href="https://github.com/TenTraicion" data-show-count="true" aria-label="Follow @TenTraicion on GitHub">Follow @TenTraicion</a>
+          <!-- Place this tag where you want the button to render. -->
+          <a class="github-button" href="https://github.com/sponsors/TenTraicion" aria-label="Sponsor @TenTraicion on GitHub">Sponsor</a>
+        </p>
+      </div>
     </main>
-    <footer>
-      <p><!-- Place this tag where you want the button to render. -->
-        <a class="github-button" href="https://github.com/TenTraicion/hibi-ciento/fork" data-show-count="true" aria-label="Fork TenTraicion/hibi-ciento on GitHub">Fork</a>
-        <!-- Place this tag where you want the button to render. -->
-        <a class="github-button" href="https://github.com/TenTraicion/hibi-ciento/issues" data-show-count="true" aria-label="Issue TenTraicion/hibi-ciento on GitHub">Issue</a>
-        <!-- Place this tag where you want the button to render. -->
-        <a class="github-button" href="https://github.com/TenTraicion/hibi-ciento/discussions" aria-label="Discuss TenTraicion/hibi-ciento on GitHub">Discuss</a>
-        <!-- Place this tag where you want the button to render. -->
-        <a class="github-button" href="https://github.com/TenTraicion/hibi-ciento/archive/HEAD.zip" aria-label="Download TenTraicion/hibi-ciento on GitHub">Download</a>
-        <!-- Place this tag where you want the button to render. -->
-        <a class="github-button" href="https://github.com/TenTraicion/hibi-ciento/subscription" data-show-count="true" aria-label="Watch TenTraicion/hibi-ciento on GitHub">Watch</a>
-      </p>
-      <p>
-        <!-- Place this tag where you want the button to render. -->
-        <a class="github-button" href="https://github.com/TenTraicion" data-show-count="true" aria-label="Follow @TenTraicion on GitHub">Follow @TenTraicion</a>
-        <!-- Place this tag where you want the button to render. -->
-        <a class="github-button" href="https://github.com/sponsors/TenTraicion" aria-label="Sponsor @TenTraicion on GitHub">Sponsor</a>
-      </p>
-    </footer>
+    <aside class="modal" id="ovrl">
+      <div class="form">
+        <div>
+          <h1>EMail Submission</h1>
+          <p>Please fill out the Form to Submit an Email</p><hr>
+        </div>
+        <div class="input">
+          <ul>
+            <li>
+              <label for="uname">Enter Your Full Name:</label>
+              <input type="text" name="Name" id="uname" required>
+            </li>
+            <li>
+              <label for="email">Your Email:</label>
+              <input type="email" name="Email" id="email" required>
+            </li>
+            <li>
+              <label for="git">GitHub Username:</label>
+              <input type="text" name="GitHub" id="git" required>
+            </li>
+            <li>
+              <label for="twit">Twitter Username:</label>
+              <input type="text" name="Twitter" id="twit" required>
+            </li>
+          </ul>
+        </div><hr>
+        <div class="input">
+          <ul>
+            <li>
+              <label for="sub">Subject:</label>
+              <input type="text" name="sub" id="sub" required>
+            </li>
+            <li>
+              <label for="msg">Your Message: <span id="count" class="pos">200</span>/200</label>
+              <textarea name="msg" id="msg" rows="4" maxlength="200" required></textarea>
+            </li></ul></div><hr>
+            <div class="chk"><ul>
+            <li>
+              <input type="checkbox" name="true" id="chk">
+              <label for="chk">I acknowledge that, after submitting the form this will take me to Gmail and I will knowingly send the mail from my own Gmail account.</label>
+            </li></ul></div>
+        <div>
+          <form action="https://mail.google.com/mail/" method="get">
+            <input type="text" name="view" value="cm">
+            <input type="text"
+            name="fs" value="1">
+            <input type="text" name="tf" value="1">
+            <input type="text" name="to"
+            value="tentraicion@gmail.com">
+            <input type="text" name="su" id="subject">
+            <textarea name="body" id="body"></textarea>
+            <button type="submit" id="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="exit">
+        <p id="exit">X</p>
+      </div>
+    </aside>
+    <footer class="text-block">
+			<p class="copy">
+				&copy; Copyright
+				<span id="copy"></span>
+				,
+				<a href="https://github.com/TenTraicion"> TenTraicion</a>
+			</p>
+		</footer>
   </body>
 </html>

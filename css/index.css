@@ -1,19 +1,9 @@
-.fuck {
-  color: #faebd7;
-  font-weight: bold;
-  font-size: 52px;
-}
-
-.hoe {
-  color: #e4e265;
-  font-size: 52px;
-}
-
-header div {
+.box {
   text-align: center;
   background-color: #44484c;
   width: 750px;
   margin: 0 auto;
+  margin-bottom: .5rem;
   border-radius: 20px;
   border: 1px solid #000000b3;
   box-shadow: 0px 2px 4px #00000033;
@@ -24,17 +14,17 @@ header div {
   margin-bottom: -64px;
 }
 
-div h1 {
+.box h1{
   font-size: 34px;
   margin-top: 100px;
   color: #f0ffff;
 }
 
-div p {
-  margin: 25px;
+.box p {
+  margin: .5rem;
 }
 
-header img {
+img {
   box-shadow: 0px 2px 4px #ccc;
 }
 

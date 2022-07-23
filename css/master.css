@@ -1,7 +1,8 @@
 body {
   background-color: #22272e;
-  margin: 50px;
+  margin: 0;
   font-family: cursive;
+  color: #f0f8ff;
 }
 
 h1 {
@@ -45,41 +46,37 @@ img:active {
 
 /*hibi-ciento.css*/
 .ciento {
-  display: block;
-  background-color: #deb887;
-  height: 32px;
-  width: auto;
-  margin-left: 0%;
-  position: relative;
-}
-
-.ciento:hover {
-  background-color: #87c3de;
-}
-
-.ciento:active {
-  background-color: #e4e265;
-  border-radius: 8px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  background-color: #292727;
+  border-radius: 10px;
 }
 
 /*hibi-ciento.css*/
-button {
-  text-align: center;
-  padding: 20px 50px;
-  border: 2px solid #5f4483;
-  color: #deb887;
-  background-color: #a25b5b;
-  font-size: 18px;
-  font-family: cursive;
-  border-radius: 40%;
-  margin: auto;
+.btn {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  background-color: #33383d;
+  width: 6rem;
+  display: inline-block;
+  border-radius: 1rem;
 }
 
-button:active {
-  border-radius: 50%;
+.text-block{
+  background-image: url(https://raw.githubusercontent.com/bornmay/bornmay/Update/svg/Bottom.svg);
+  text-align: center;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
 }
 
-div {
-  text-align: center;
-  color: #5f4483;
+.copy{
+  text-align: right;
+  position: relative;
+  top: 245px;
+  margin-right: 1rem;
+  border-radius: 10px;
 }
