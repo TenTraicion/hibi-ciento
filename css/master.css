@@ -1,24 +1,28 @@
 body {
-  background-color: #5f4483;
+  background-color: #22272e;
   margin: 50px;
+  font-family: cursive;
 }
+
 h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   color: #ff7f50;
 }
+
 p {
-  font-family: "Grape Nuts", cursive;
   text-align: center;
   color: #e9a371;
 }
+
 a {
   text-decoration: none;
   color: #e17df5;
 }
+
 a:hover {
   color: #82eed7;
 }
+
 /*Hover effect on anchor text*/
 img {
   width: 128px;
@@ -28,14 +32,17 @@ img {
   margin-right: auto;
   display: block;
 }
+
 /*border radius to make the border rounded, margin and display block to push it in center*/
 img:active {
   border-radius: 32px;
 }
+
 .hover:hover {
   font-size: 36px;
   color: #f0ffff;
 }
+
 /*hibi-ciento.css*/
 .ciento {
   display: block;
@@ -45,13 +52,16 @@ img:active {
   margin-left: 0%;
   position: relative;
 }
+
 .ciento:hover {
   background-color: #87c3de;
 }
+
 .ciento:active {
   background-color: #e4e265;
   border-radius: 8px;
 }
+
 /*hibi-ciento.css*/
 button {
   text-align: center;
@@ -64,9 +74,11 @@ button {
   border-radius: 40%;
   margin: auto;
 }
+
 button:active {
   border-radius: 50%;
 }
+
 div {
   text-align: center;
   color: #5f4483;
