@@ -31,3 +31,7 @@ img {
 span {
   color: #deb887;
 }
+
+#contact{
+  cursor: pointer;
+}
