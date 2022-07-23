@@ -1,9 +1,3 @@
-.hover {
-  font-size: 36px;
-}
-.hover:hover {
-  color: #f5deb3;
-}
 ol {
   list-style: none;
   color: #ff6347;
@@ -11,10 +5,11 @@ ol {
   margin: 36px auto 0 auto;
   padding: 0;
 }
+
 /* To Hide the bullets of List */
 li {
   color: #f5deb3;
-  background-color: #a52a2a;
+  background-color: #3b2c2c;
   padding: 16px;
   margin: 32px;
   border-radius: 6px;
@@ -22,15 +17,19 @@ li {
   box-shadow: 1px 1px 5px #000000;
   /* box-shadow: Vertical-Right Horizontal-Top Blurrness Color Color-Opacity; */
 }
-/* #nothing{
-  margin-bottom: 36px;
-} */
+
+header{
+  margin-top: 3rem;
+}
+
 header p {
   margin-bottom: 36px;
 }
+
 h2 {
   color: #f0ffff;
 }
+
 main p {
   color: #00ffff;
   margin: 12px;
