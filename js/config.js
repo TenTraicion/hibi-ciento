@@ -13,13 +13,18 @@ function closeConfig() {
   chk.checked = false;
   subject.value = "";
   body.value = "";
+  uname.value = "";
+  email.value = "";
+  git.value = "";
+  twit.value = "";
+  msg.value = "";
   btn.style.display = "none";
   console.log("Form Closed!")
 }
 
 //checkbox
 function checked() {
-  if (uname === "" || email === "" || git === "" || twit === "" || sub === "" || msg === "") {
+  if (uname.value == "" || email.value == "" || git.value == "" || twit.value == "" || sub.value == "" || msg.value == "") {
     err.classList.add("error");
     btn.style.display = "none";
     return;
@@ -32,9 +37,6 @@ function checked() {
 
     subject.value = sub.value;
     body.value = output + mail;
-  
-
-  
 }
 
 //count
