@@ -13,23 +13,26 @@ function closeConfig() {
   chk.checked = false;
   subject.value = "";
   body.value = "";
+  btn.style.display = "none";
   console.log("Form Closed!")
 }
 
 //checkbox
 function checked() {
   if (uname === "" || email === "" || git === "" || twit === "" || sub === "" || msg === "") {
-    btn.style.display = "block"
+    err.classList.add("error");
+    btn.style.display = "none";
+    return;
+  }
+    err.classList.remove("error");
+    btn.style.display = "inline"
 
     const output = `MY Information: \n Name: ${uname.value}\n Email: ${email.value}\n GitHub Profile: https://github.com/${git.value}\n Twitter: https://twitter.com/${twit.value}`;
     const mail = `\n\n My Message:\n ${msg.value}`;
 
     subject.value = sub.value;
     body.value = output + mail;
-    console.log(output + mail);
-  } else {
-    err.classList.add("error");
-  }
+  
 
   
 }
