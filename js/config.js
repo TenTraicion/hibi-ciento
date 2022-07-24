@@ -9,17 +9,29 @@ function openConfig() {
 function closeConfig() {
   ovrl.style.display = "none";
   backdrop.style.display = "none";
+  err.classList.remove("error");
+  chk.checked = false;
+  subject.value = "";
+  body.value = "";
   console.log("Form Closed!")
 }
 
 //checkbox
 function checked() {
-  const output = `MY Information: \n Name: ${uname.value}\n Email: ${email.value}\n GitHub Profile: https://github.com/${git.value}\n Twitter: https://twitter.com/${twit.value}`;
-  const mail = `\n\n My Message:\n ${msg.value}`;
+  if (uname === "" || email === "" || git === "" || twit === "" || sub === "" || msg === "") {
+    btn.style.display = "block"
 
-  subject.value = sub.value;
-  body.value = output + mail;
-  console.log(output + mail);
+    const output = `MY Information: \n Name: ${uname.value}\n Email: ${email.value}\n GitHub Profile: https://github.com/${git.value}\n Twitter: https://twitter.com/${twit.value}`;
+    const mail = `\n\n My Message:\n ${msg.value}`;
+
+    subject.value = sub.value;
+    body.value = output + mail;
+    console.log(output + mail);
+  } else {
+    err.classList.add("error");
+  }
+
+  
 }
 
 //count

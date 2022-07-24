@@ -135,3 +135,13 @@ textarea.error {
   color:#d3361a;
   font-weight: bold;
 }
+
+#submit{
+  display: none;
+}
+
+#error.error{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d3361a;
+}

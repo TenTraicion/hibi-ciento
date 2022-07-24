@@ -11,6 +11,7 @@ const cancel = document.getElementById("exit");
 const chk = document.getElementById("chk");
 const remains = document.getElementById("count");
 const btn = document.getElementById("submit");
+const err = document.getElementById("error");
 
 //taking input
 const uname = document.getElementById("uname");
