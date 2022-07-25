@@ -27,6 +27,7 @@ function checked() {
   if (uname.value == "" || email.value == "" || git.value == "" || twit.value == "" || sub.value == "" || msg.value == "") {
     err.classList.add("error");
     btn.style.display = "none";
+    chk.checked = false;
     return;
   }
     err.classList.remove("error");
