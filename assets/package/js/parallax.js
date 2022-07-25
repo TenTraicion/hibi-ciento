@@ -1,4 +1,4 @@
-const { simpleParallax } = require("simpleParallax.min");
+const simpleParallax = require("simpleParallax.min");
 
 const img = document.getElementById("img");
 
