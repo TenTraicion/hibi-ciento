@@ -1,6 +1,6 @@
 const img = document.getElementById("img");
 
-new simpleParallax(img, {
+ var did = new simpleParallax(img, {
   scale: 1.6,
   delay: 0.1,
 });
