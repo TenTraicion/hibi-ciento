@@ -1,5 +1,3 @@
-const simpleParallax = require("simpleParallax.min");
-
 const img = document.getElementById("img");
 
 new simpleParallax(img, {
