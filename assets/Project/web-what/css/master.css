@@ -1,4 +1,31 @@
 body{
   margin: 0;
   font-family: cursive;
+  color: #f0f8ff;
+  background-color: #f3e3ff;
+}
+
+a{
+  text-decoration: none;
+  color: #d7bbf7;
+}
+
+a:hover{
+  color: #700dcc;
+}
+
+.text-block{
+  background-image: url(https://raw.githubusercontent.com/bornmay/bornmay/Update/svg/Bottom.svg);
+  text-align: center;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+.copy{
+  text-align: right;
+  position: relative;
+  top: 245px;
+  margin-right: 1rem;
+  border-radius: 10px;
 }
