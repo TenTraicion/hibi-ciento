@@ -15,13 +15,14 @@ p {
   color: #e9a371;
 }
 
-a {
+a, .a{
   text-decoration: none;
   color: #e17df5;
 }
 
-a:hover {
+a:hover, .a:hover {
   color: #82eed7;
+  padding: .5rem;
 }
 
 /*Hover effect on anchor text*/
@@ -55,7 +56,6 @@ img:active {
   border-radius: 10px;
 }
 
-/*hibi-ciento.css*/
 .btn {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
