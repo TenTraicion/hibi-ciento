@@ -1,0 +1,14 @@
+{
+  "name": "hibi-ciento-node-js",
+  "version": "1.0.0",
+  "description": "Just a tracking course 100 Days of Code!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TenTraicion",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
