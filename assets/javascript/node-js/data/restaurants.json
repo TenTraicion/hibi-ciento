@@ -1,16 +1,1 @@
-[
-	{
-		"name": "Cafe",
-		"address": "Love Road Mainkachipa",
-		"cuisine": "CocaCola",
-		"website": "https://hira-saha.github.io",
-		"description": "The Cocacola is too much cheap there."
-	},
-	{
-		"name": "Arekta Restaurent",
-		"address": "Address Nai",
-		"cuisine": "Kisui Nai",
-		"website": "https://websitenai.com",
-		"description": "Because there is nothing"
-	}
-]
+[{"name":"Cafe","address":"Love Road Mainkachipa","cuisine":"CocaCola","website":"https://hira-saha.github.io","description":"The Cocacola is too much cheap there."},{"name":"Arekta Restaurent","address":"Address Nai","cuisine":"Kisui Nai","website":"https://websitenai.com","description":"Because there is nothing"},{"name":"Diablotic","address":"Diablo, Demon Road, TenTraicion Arena","cuisine":"Diablion","website":"https://diablotic.tentraicion.dr","description":"Awesome demon food."}]
