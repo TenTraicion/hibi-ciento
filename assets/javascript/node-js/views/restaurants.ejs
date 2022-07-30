@@ -49,7 +49,10 @@
 		</aside>
 		<main>
 			<h1>Recommended restaurants</h1>
-			<p>Find your next favorite restaurants with help of our other users!</p>
+      <% if (numberOfRestaurants === 0) { %>
+        <p>Unfortunately, We have no restaurants yet - maybe start recommending some <a href="/recommend">here</a></p>
+      <% } else { %>
+        <p>Find your next favorite restaurants with help of our other users!</p>
 			<p>We Found <%= numberOfRestaurants %> Restaurants!</p>
 			<ul id="restaurants-list">
 				<% for (const restaurant of restaurants) { %>
@@ -68,6 +71,7 @@
 				</li>
 				<% } %>
 			</ul>
+      <% } %>
 		</main>
 	</body>
 </html>
