@@ -41,3 +41,6 @@ function sumIn(...numbers) {
 const inputNumbers = [1,2,20,12,15,50];
 
 console.log(sumIn(...inputNumbers));
+
+console.log(sumIn);
+console.dir(sumIn);
