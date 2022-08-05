@@ -1,7 +1,7 @@
 const fs = require("fs");
 const pr = require("fs/promises");
 
-function readFile() {
+async function readFile() {
   fs.readFile("data.txt", function(error, fileData) {
     if(error) {
       console.log(error.message);
@@ -10,12 +10,9 @@ function readFile() {
     console.log(fileData.toString());
   });
 
-  pr.readFile("data.txt").then(function(fileData) {
+  const fileData = await pr.readFile("data.txt")
     console.log("Again Parsing Done!");
     console.log(`msg: ${fileData.toString()}`);
-  }).catch(function(error) {
-    console.log(error.message);
-  });
  
   console.log("Hi");
 }
