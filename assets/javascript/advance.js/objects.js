@@ -23,3 +23,10 @@ const developer = new Job("Developer", "New York", "$500k");
 console.log(developer);
 
 developer.describe();
+
+const input = ["Ten", "Traicion"];
+const [firstName, lastName] = input;
+
+const work = { title: "nothing", salary: null};
+const {title, salary} = work;
+const {salary : jSalary} = work;
