@@ -12,8 +12,14 @@ class Job {
     this.location = place;
     this.salary = salary;
   }
+
+  describe() {
+    console.log(`I'm a ${this.title}, I work in ${this.location} and I earn ${this.salary}.`);
+  }
 }
 
 const developer = new Job("Developer", "New York", "$500k");
 
 console.log(developer);
+
+developer.describe();
