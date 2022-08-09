@@ -3,7 +3,9 @@
   <p class="post-item-author">By <%= post.author_name %></p>
   <p><%= post.summary %></p>
   <div class="post-actions">
-    <button class="btn btn-alt">Delete Post</button>
+    <form action="/posts/<%= post.id %>/delete" method="POST">
+      <button class="btn btn-alt">Delete Post</button>
+    </form>
     <a href="/posts/<%= post.id %>/edit">Edit Post</a>
     <a class="btn" href="/posts/<%= post.id %>">View Post</a>
   </div>
