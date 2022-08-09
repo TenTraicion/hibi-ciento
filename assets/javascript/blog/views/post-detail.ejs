@@ -2,20 +2,21 @@
 <html lang="en">
 
 <head>
-  <%- include('includes/head', { title: 'Post title' }) %>
+  <%- include('includes/head', { title: post.title }) %>
   <link rel="stylesheet" href="/styles/posts.css">
 </head>
 
 <body>
   <%- include('includes/header') %>
   <main id="post-detail">
-    <h1>...</h1>
+    <h1><%= post.title %></h1>
     <section id="post-meta">
-      ...
+      <address><a href="mailto:<%= post.author_email %>"><%= post.author_name %></a></address> | 
+      <time datetime="<%= post.date %>"><%= post.date %></time>
     </section>
     <hr>
     <section>
-      <p id="body">...</p>
+      <p id="body"><%= post.body %></p>
     </section>
   </main>
 </body>
