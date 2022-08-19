@@ -7,6 +7,7 @@
   <title>New Profile</title>
   <link rel="stylesheet" href="/styles/base.css">
   <link rel="stylesheet" href="/styles/profiles.css">
+  <script src="/scripts/file-preview.js" defer></script>
 </head>
 <body>
   <main id="new-user">
@@ -16,6 +17,7 @@
         <input type="text" id="username" name="username" required>
       </div>
       <div class="form-control">
+        <img id="image-preview" src="" alt="Your Picked Image">
         <label for="image">User image</label>
         <input type="file" id="image" name="image" required accept="image/jpg,image/png,image/jpeg">
       </div>

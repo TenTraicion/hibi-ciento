@@ -41,3 +41,10 @@
   margin: 0.5rem 0;
 }
 
+#image-preview {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2.5rem;
+  object-fit: cover;
+  display: none;
+}
