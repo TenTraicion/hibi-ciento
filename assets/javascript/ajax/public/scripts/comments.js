@@ -30,12 +30,23 @@ async function fetchCommentsForPost() {
   commentsSectionElement.appendChild(commentsListElement);
 }
 
-function saveComment(event) {
+async function saveComment(event) {
   event.preventDefault();
 
   const enteredTitle = commentTitleElement.value;
   const enteredText = commentTextElement.value;
+
+  const comment = {title: enteredTitle, text: enteredText};
   
+  const postId = commentsFormElement.dataset.postid;
+
+  fetch(`/posts/${postId}/comments`, {
+    method: "POST",
+    body: JSON.stringify(comment),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  });
 }
 
 loadCommentsBtnElement.addEventListener("click", fetchCommentsForPost);
