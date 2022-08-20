@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/styles/base.css" />
     <link rel="stylesheet" href="/styles/forms.css" />
     <link rel="stylesheet" href="/styles/posts.css" />
+    <script src="/scripts/comments.js" defer></script>
   </head>
 
   <body>
@@ -27,9 +28,7 @@
           This post might have comments. You can load them if you want to view
           them.
         </p>
-        <form action="/posts/<%= post._id %>/comments" method="GET">
-          <button class="btn btn-alt">Load Comments</button>
-        </form>
+        <button id="load-comments-btn" class="btn btn-alt" data-postid="<%= post._id %>">Load Comments</button>
         <% } else if (comments.length === 0) { %>
           <p>No comments found.</p>
         <% } else { %>
