@@ -16,7 +16,23 @@ router.get('/login', function (req, res) {
   res.render('login');
 });
 
-router.post('/signup', async function (req, res) {});
+router.post('/signup', async function (req, res) {
+  const userData = req.body;
+  const username = userData.username;
+  const email = userData.email;
+  const confirmEmail = userData["confirm-email"];
+  const password = userData.password;
+
+  const user = {
+    username: username,
+    email: email,
+    password: password,
+  }
+
+  await db.getDb().collection("users").insertOne(user);
+
+  res.redirect("/login");
+});
 
 router.post('/login', async function (req, res) {});
 
