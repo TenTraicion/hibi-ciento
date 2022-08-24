@@ -1,4 +1,5 @@
 const express = require('express');
+const bcrypt = require("bcryptjs");
 
 const db = require('../data/database');
 
@@ -23,10 +24,12 @@ router.post('/signup', async function (req, res) {
   const confirmEmail = userData["confirm-email"];
   const password = userData.password;
 
+  const pwd= await bcrypt.hash(password, 16);
+
   const user = {
     username: username,
     email: email,
-    password: password,
+    password: pwd,
   }
 
   await db.getDb().collection("users").insertOne(user);
