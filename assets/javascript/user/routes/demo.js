@@ -24,6 +24,20 @@ router.post('/signup', async function (req, res) {
   const confirmEmail = userData["confirm-email"];
   const password = userData.password;
 
+  if(!email || !confirmEmail || !password || !username || password.trim() < 8 || email !== confirmEmail || !email.includes("@")) {
+    console.log("incorrect element!")
+    return res.redirect("/signup");
+  }
+
+  const existingEmail = await db.getDb().collection("users").findOne({email: email});
+
+  const existingUser = await db.getDb().collection("users").findOne({username: username});
+
+  if(existingUser || existingEmail){
+    console.log("Allredy Have a Profile");
+    return res.redirect("/login");
+  }
+
   const pwd= await bcrypt.hash(password, 16);
 
   const user = {
