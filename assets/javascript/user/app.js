@@ -33,6 +33,23 @@ app.use(session({
   // },
 }));
 
+app.use(async function(req, res, next) {
+  const user = req.session.user;
+  const isAuth = req.session.isAuthenticated;
+
+  if(!user || !isAuth) {
+    return next();
+  }
+
+  const userData = await db.getDb().collection("users").findOne({_id: user.id});
+  const admin = userData.admin;
+
+  res.locals.isAuth = isAuth;
+  res.locals.admin = admin;
+
+  next();
+});
+
 app.use(demoRoutes);
 
 app.use(function(error, req, res, next) {

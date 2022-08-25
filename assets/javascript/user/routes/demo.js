@@ -142,18 +142,17 @@ router.post('/login', async function (req, res) {
   req.session.isAuthenticated = true;
 
   req.session.save(function() {
-    console.log("Authintication Successfull");
+    //console.log("Authintication Successfull");
     res.redirect("/profile");
   });
 });
 
 router.get('/admin', async function (req, res) {
-  if(!req.session.isAuthenticated) {
+  if(!res.locals.isAuth) {
     return res.status(401).render("401");
   }
-  const user = await db.getDb().collection("users").findOne({_id: req.session.user.id});
 
-  if(!user || !user.admin) {
+  if(!res.locals.admin) {
     return res.status(403).render("403");
   }
   res.render('admin');
@@ -166,7 +165,7 @@ router.post('/logout', function (req, res) {
 });
 
 router.get('/profile', function (req, res) {
-  if(!req.session.isAuthenticated) {
+  if(!res.locals.isAuth) {
     return res.status(401).render("401");
   }
   res.render('profile');
