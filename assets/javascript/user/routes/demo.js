@@ -27,7 +27,17 @@ router.get('/signup', function (req, res) {
 });
 
 router.get('/login', function (req, res) {
-  res.render('login');
+  let sessionInput = req.session.inputData;
+
+  if(!sessionInput) {
+    sessionInput = {
+      hasError: false,
+      user: "",
+      pwd: "",
+    };
+  }
+  req.session.inputData = null;
+  res.render('login', {inputData: sessionInput});
 });
 
 router.post('/signup', async function (req, res) {
@@ -48,7 +58,7 @@ router.post('/signup', async function (req, res) {
     };
 
     req.session.save(function() {
-      console.log("incorrect element!")
+      //console.log("incorrect element!")
       res.redirect("/signup");
     });
     return;
@@ -59,8 +69,19 @@ router.post('/signup', async function (req, res) {
   const existingUser = await db.getDb().collection("users").findOne({username: username});
 
   if(existingUser || existingEmail){
-    console.log("Allredy Have a Profile");
-    return res.redirect("/login");
+    req.session.inputData = {
+      hasError: true,
+      message: "User Exist! Please Login!",
+      user: username,
+      email: email,
+      confirmEmail: confirmEmail,
+      pwd: password,
+    };
+    req.session.save(function(){
+      res.redirect("/signup");
+    });
+    //console.log("Allredy Have a Profile");
+    return;
   }
 
   const pwd= await bcrypt.hash(password, 16);
@@ -88,15 +109,33 @@ router.post('/login', async function (req, res) {
   }
 
   if(!existingUser){
-    console.log("login error");
-    return res.redirect("/login");
+    req.session.inputData = {
+      hasError: true,
+      message: "Incorrect Credentials!",
+      user: uid,
+      pwd: password,
+    };
+    req.session.save(function(){
+      res.redirect("/login");
+    });
+    //console.log("login error");
+    return;
   }
 
   const check = await bcrypt.compare(password, existingUser.password);
 
   if(!check) {
-    console.log("pass error");
-    return res.redirect("/login");
+    req.session.inputData = {
+      hasError: true,
+      message: "Incorrect Credentials!",
+      user: uid,
+      pwd: password,
+    };
+    req.session.save(function(){
+      res.redirect("/login");
+    });
+    //console.log("pass error");
+    return;
   }
 
   req.session.user = {id: existingUser._id, user: existingUser.username, email: existingUser.email};

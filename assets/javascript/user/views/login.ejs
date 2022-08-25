@@ -7,14 +7,17 @@
   <%- include('includes/header.ejs') %>
   <main id="signup">
     <h1>Login</h1>
+    <% if (inputData.hasError) { %>
+      <p id="input-error"><%= inputData.message %></p>
+    <% } %> 
     <form action="/login" method="POST">
       <div class="form-control">
         <label for="uid">Email or UserName</label>
-        <input type="text" id="uid" name="uid" required>
+        <input type="text" id="uid" name="uid" value="<%= inputData.user %>" required>
       </div>
       <div class="form-control">
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" value="<%= inputData.pwd %>" id="password" name="password" required>
       </div>
       <button class="btn">Log in</button>
     </form>
