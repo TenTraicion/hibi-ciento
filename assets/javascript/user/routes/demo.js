@@ -2,6 +2,7 @@ const express = require('express');
 const bcrypt = require("bcryptjs");
 
 const db = require('../data/database');
+const { render } = require('ejs');
 
 const router = express.Router();
 
@@ -103,13 +104,18 @@ router.post('/login', async function (req, res) {
 
   req.session.save(function() {
     console.log("Authintication Successfull");
-    res.redirect("/admin");
+    res.redirect("/profile");
   });
 });
 
-router.get('/admin', function (req, res) {
+router.get('/admin', async function (req, res) {
   if(!req.session.isAuthenticated) {
     return res.status(401).render("401");
+  }
+  const user = await db.getDb().collection("users").findOne({_id: req.session.user.id});
+
+  if(!user || !user.admin) {
+    return res.status(403).render("403");
   }
   res.render('admin');
 });
@@ -118,6 +124,13 @@ router.post('/logout', function (req, res) {
   req.session.user = null;
   req.session.isAuthenticated = false;
   res.redirect("/");
+});
+
+router.get('/profile', function (req, res) {
+  if(!req.session.isAuthenticated) {
+    return res.status(401).render("401");
+  }
+  res.render('profile');
 });
 
 module.exports = router;
