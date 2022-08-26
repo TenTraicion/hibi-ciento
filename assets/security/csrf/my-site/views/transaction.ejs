@@ -6,6 +6,7 @@
   <main>
     <h1>Send Money</h1>
     <form action="/transaction" method="POST">
+      <input type="hidden" value="<%= csrfToken %>" name="_csrf">
       <div class="form-control">
         <label for="recipient">Recipient Email</label>
         <input type="email" id="recipient" name="recipient">
