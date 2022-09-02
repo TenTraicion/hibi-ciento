@@ -3,7 +3,7 @@ const { postIsValid } = require("../util/validation");
 const { getSessionErrorData, flashErrorsToSession } = require("../util/validation-session");
 
 function getHome (req, res) {
-  res.render('welcome', { csrfToken: req.csrfToken() });
+  res.render('welcome');
 }
 
 async function getAdmin (req, res) {
@@ -21,7 +21,6 @@ async function getAdmin (req, res) {
   res.render('admin', {
     posts: posts,
     inputData: sessionInputData,
-    csrfToken: req.csrfToken(),
   });
 }
 
@@ -63,7 +62,6 @@ async function getSinglePost (req, res) {
   res.render('single-post', {
     post: post,
     inputData: sessionInputData,
-    csrfToken: req.csrfToken(),
   });
 }
 
