@@ -1,4 +1,4 @@
-async function auth(req, res, next) {
+async function auth (req, res, next) {
   const user = req.session.user;
   const isAuth = req.session.isAuthenticated;
 

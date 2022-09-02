@@ -4,7 +4,7 @@ function getSessionErrorData(req, defaultValues) {
   if (!sessionInputData) {
     sessionInputData = {
       hasError: false,
-      ...defaultValues,
+      ...defaultValues
     };
   }
 
@@ -16,12 +16,13 @@ function getSessionErrorData(req, defaultValues) {
 function flashErrorsToSession(req, data, action) {
   req.session.inputData = {
     hasError: true,
-    ...data,
+    ...data
   };
+
   req.session.save(action);
 }
 
-module.exports= {
+module.exports = {
   getSessionErrorData: getSessionErrorData,
-  flashErrorsToSession: flashErrorsToSession,
-}
+  flashErrorsToSession: flashErrorsToSession
+};

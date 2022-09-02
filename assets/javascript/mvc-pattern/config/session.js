@@ -1,13 +1,14 @@
 const mongodbStore = require('connect-mongodb-session');
 
-
 function createSessionStore(session) {
   const MongoDBStore = mongodbStore(session);
+
   const sessionStore = new MongoDBStore({
     uri: 'mongodb://127.0.0.1:27017',
     databaseName: 'auth-demo',
-    collection: 'sessions'
+    collection: 'sessions',
   });
+
   return sessionStore;
 }
 
@@ -23,7 +24,7 @@ function createSessionConfig(sessionStore) {
   };
 }
 
-module.exports= {
+module.exports = {
   createSessionStore: createSessionStore,
-  createSessionConfig: createSessionConfig,
+  createSessionConfig: createSessionConfig
 };
