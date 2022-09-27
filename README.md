@@ -41,8 +41,11 @@
 
 ## Linked Projects
 | Name | Starting Date | Finalization | Done |
-| ----- | -------------- | -------------- | ----|
-| [OlaMart](/../../../../tentraicion/olamart/blob/master/README.md)| September 1, 2022 | Unknown | [] |
+| ----- | -------------- | -------------- | ---- |
+| [OlaMart](/../../../../tentraicion/olamart/blob/master/README.md) | September 1, 2022 | Unknown | ❗ |
+| [Platinamo](/../../../../platinamo/) | July 1, 2017 | Unknown | ✖️ |
+| [Solvinux](/../../../../solvinux/) | July 1, 2022 | Unknown | ✔️ |
+| [Dive Into](/../../../../dive-into/) | July 1, 2022 | December 31, 2022 | 💲 |
 
 
 ## Contributors
