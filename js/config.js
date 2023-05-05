@@ -18,6 +18,9 @@ function closeConfig() {
   git.value = "";
   twit.value = "";
   msg.value = "";
+  msg.className= "";
+  remains.textContent = "200";
+  remains.className = "pos";
   btn.style.display = "none";
   console.log("Form Closed!")
 }
@@ -59,5 +62,6 @@ function update(event) {
   } else {
       remains.className = "pos";
       msg.classList.remove("warning");
+      msg.classList.remove("error");
   }
 }
