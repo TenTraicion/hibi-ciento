@@ -1,6 +1,6 @@
 ﻿# Hibi Ciento (Hundred Days)
 
-#### The project `hibi-ciento` is a self-learning project of hundred days. `Hibi` means "Days" in Japanese and `ciento` means "Hundred" in Spanish. I'm trying to achieve a goal of learning code (from root to advanced mode) and will try to implement it through my works. I have set the target to learn coding within 100 days. I believe as a grown up man I can achieve my goal. I am determined to achieve this goal. This repository is created to track my progress which will lead into achievement one day and I believe that this will lead me to a better future. At least I will be able to say, "At least I tried".
+> #### The project `hibi-ciento` is a self-learning project of hundred days. `Hibi` means "Days" in Japanese and `ciento` means "Hundred" in Spanish. I'm trying to achieve a goal of learning code (from root to advanced mode) and will try to implement it through my works. I have set the target to learn coding within 100 days. I believe as a grown up man I can achieve my goal. I am determined to achieve this goal. This repository is created to track my progress which will lead into achievement one day and I believe that this will lead me to a better future. At least I will be able to say, "At least I tried".
 
 ## In a nutshell
 
@@ -42,15 +42,17 @@
 ## Linked Projects
 | Name | Starting Date | Finalization | Done |
 | ----- | -------------- | -------------- | ---- |
-| [OlaMart](/../../../../tentraicion/olamart/blob/master/README.md) | September 1, 2022 | Unknown | ❗ |
+| [OlaMart](/../../../../tentraicion/olamart/blob/master/README.md) | September 1, 2022 | May 11, 2023 | ✔️ |
 | [Platinamo](/../../../../platinamo/) | July 1, 2017 | Unknown | ✖️ |
-| [Solvinux](/../../../../solvinux/) | July 1, 2022 | Unknown | ✔️ |
+| [Solvinux](/../../../../solvinux/) | July 1, 2022 | Unknown | ❗ |
 | [Dive Into](/../../../../dive-into/) | July 1, 2022 | December 31, 2022 | 💲 |
 
 
 ## Contributors
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=tentraicion/hibi-ciento)
+
+> This project is under ROP[^RoP].
 
 [hc]: https://github.com/TenTraicion/hibi-ciento "Hibi-Ciento"
 [S]: https://github.com/solvinux "Solvinux Solution Inc."
@@ -64,3 +66,5 @@
 [Gp]: https://GitHub.com/tentraicion/hibi-ciento/pull/ "Repo Pull"
 [Gc]: https://github.com/tentraicion/hibi-ciento/graphs/contributors "Contributors"
 [Gf]: https://github.com/TenTraicion/hibi-ciento/fork
+
+[^RoP]: `Request of Perticipation` implies any interest in participating for both open source and allotted projects on a volunteer basis via open collaboration and teamwork.
