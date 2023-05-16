@@ -10,7 +10,7 @@ async function initDB() {
 
 function getDB() {
   if (!database) {
-    throw new Error('Call initDB() first!');
+    throw new Error('DB not Found!');
   } else {
     return database;
   }
