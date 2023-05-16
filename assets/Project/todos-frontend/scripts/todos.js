@@ -6,12 +6,7 @@ let editedTodoElement;
 async function loadTodos() {
   let response;
   try {
-    response = await fetch('http://localhost:3000/todos', {
-      method: 'GET',
-      withCredentials: true,
-      crossorigin: true,
-      mode: 'no-cors',
-    });
+    response = await fetch('http://localhost:3000/todos');
   } catch (error) {
     alert('Something went wrong!');
     return;
