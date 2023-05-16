@@ -7,4 +7,8 @@ router.get('/', todosController.getAll);
 
 router.post('/', todosController.add);
 
+router.patch('/:id', todosController.update);
+
+router.delete('/:id', todosController.remove);
+
 module.exports = router;
