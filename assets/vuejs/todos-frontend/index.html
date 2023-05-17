@@ -28,8 +28,8 @@
           <li v-for="todo in todos">
             <p>{{todo.text}}</p>
             <div>
-              <button>Edit</button>
-              <button>Delete</button>
+              <button @click="editTodo(todo.id)">Edit</button>
+              <button @click="deleteTodo(todo.id)">Delete</button>
             </div>
           </li>
         </ul>
