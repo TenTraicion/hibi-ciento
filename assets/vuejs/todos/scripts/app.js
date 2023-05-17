@@ -7,7 +7,7 @@ const TodosApp = {
     };
   },
   methods: {
-    async saveTodo(event) {
+    saveTodo(event) {
       event.preventDefault();
       if (this.editedID) {
         const id = this.editedID;
@@ -21,37 +21,10 @@ const TodosApp = {
         this.todos[index] = updatedTodo;
         this.editedID = '';
       } else {
-        
-        let response;
-
-        try {
-          response = await fetch('http://localhost:3000/todos', {
-            method: 'POST',
-            body: JSON.stringify({
-              text: this.enteredValue,
-            }),
-            headers: {
-              'Content-Type': 'application/json',
-            },
-          });
-        } catch (error) {
-          alert('Something went wrong!');
-          return;
-        }
-
-        if (!response.ok) {
-          alert('Something went wrong!');
-          return;
-        }
-
-        const responseData = await response.json();
-
         const newTodo = {
-									text: this.enteredValue,
-									id: responseData.createdTodo.id,
-								};
-
-
+          text: this.enteredValue,
+          id: new Date().toISOString(),
+        };
         this.todos.push(newTodo);
       }
       this.enteredValue = '';
