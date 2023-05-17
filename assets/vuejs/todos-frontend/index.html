@@ -20,7 +20,7 @@
       <section id="todo-management">
         <form @submit="saveTodo">
           <label for="text">Todo text</label>
-          <input type="text" id="text" name="text" required />
+          <input type="text" id="text" v-model="enteredValue" required />
           <button>Save</button>
         </form>
       </section>
