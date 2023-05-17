@@ -15,8 +15,6 @@
       <p>Manage your (daily) todos with ease!</p>
     </header>
     <main id="todos-app">
-      <h2>{{newTodo}}</h2>
-      <p>{{newTodo}}</p>
       <section id="todo-management">
         <form @submit="saveTodo">
           <label for="text">Todo text</label>
@@ -26,6 +24,13 @@
       </section>
       <section id="todos">
         <ul id="todos-list">
+          <li v-for="todo in todos">
+            <p>{{todo.text}}</p>
+            <div>
+              <button>Edit</button>
+              <button>Delete</button>
+            </div>
+          </li>
         </ul>
       </section>
     </main>
