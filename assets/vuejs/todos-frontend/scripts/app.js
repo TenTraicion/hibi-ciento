@@ -12,6 +12,29 @@ const TodosApp = {
       event.preventDefault();
       if (this.editedID) {
         const id = this.editedID;
+
+        let response;
+
+				try {
+					response = await fetch("http://localhost:3000/todos/" + id, {
+					  method: "PATCH",
+					  body: JSON.stringify({
+					  text: this.enteredValue,
+					}),
+						headers: {
+							"Content-Type": "application/json",
+        		},
+				});
+				} catch (error) {
+					alert("Something went wrong!");
+					return;
+				}
+
+				if (!response.ok) {
+					alert("Something went wrong!");
+					return;
+				}
+
         const index = this.todos.findIndex(function(todo) {
           return todo.id === id;
         });
@@ -64,10 +87,26 @@ const TodosApp = {
       });
       this.enteredValue = item.text;
     },
-    deleteTodo(id) {
+    async deleteTodo(id) {
       this.todos = this.todos.filter(function(todo) {
         return todo.id !== id;
       });
+
+      let response;
+
+      try {
+        response = await fetch('http://localhost:3000/todos/' + id, {
+        method: 'DELETE',
+       });
+      } catch (error) {
+         alert('Something went wrong!');
+         return;
+      }
+
+      if (!response.ok) {
+        alert('Something went wrong!');
+       return;
+     }
     },
   },
   async created() {
