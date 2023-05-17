@@ -35,7 +35,12 @@ const TodosApp = {
         return todo.id === id;
       });
       this.enteredValue = item.text;
-    }
+    },
+    deleteTodo(id) {
+      this.todos = this.todos.filter(function(todo) {
+        return todo.id !== id;
+      });
+    },
   },
 };
 
