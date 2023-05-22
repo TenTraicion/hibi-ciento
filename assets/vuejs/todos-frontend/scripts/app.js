@@ -104,8 +104,7 @@ const TodosApp = {
       }
 
       if (!response.ok) {
-        alert('Something went wrong!');
-       return;
+        return alert('Something went wrong!');
      }
     },
   },
