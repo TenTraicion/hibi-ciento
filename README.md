@@ -46,6 +46,7 @@
 | [Platinamo](/../../../../platinamo/) | July 1, 2017 | Unknown | ✖️ |
 | [Solvinux](/../../../../solvinux/) | July 1, 2022 | Unknown | ❗ |
 | [Dive Into](/../../../../dive-into/) | July 1, 2022 | December 31, 2022 | 💲 |
+| [Hibi-Ciento](/../../../../tentraicion/hibi-ciento/blob/master/README.md) | May 20, 2022 | May 20, 2023 | ✔️ |
 
 
 ## Contributors
